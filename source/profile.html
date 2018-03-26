@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Taketoken</title>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="js/app.js" as="script">
+    <link rel="preload" href="js/picturefill.js" as="script">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext"
+          rel="stylesheet">
+</head>
+<body class="inner-page-body">
+
+<div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+</div>
+
+<header class="inner-page-header">
+    <div class="logo-header">
+        <a href="index.html" class="">
+            <img width="60" height="51" src="img/teketoken_logo_header.png" alt="logo TakeToken">
+        </a>
+    </div>
+    <nav>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav no-borders">
+
+                <li>
+                    <a href="profile.html">
+                        <svg class="" width="24" height="24">
+                            <use xlink:href="#sprite-user-circle"></use>
+                        </svg>
+                        <span class="text-muted">User number one</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <svg class="" width="24" height="24">
+                            <use xlink:href="#sprite-sign-out-alt"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="inner-page">
+
+    <div class="inner-page-navigation" id="navigation">
+
+        <div class="profile-picture">
+            <a href="index.html">
+                <img src="img/profile.jpg" class="img-circle m-b" alt="logo">
+            </a>
+
+            <div class="stats-label text-color">
+                <span class="font-extra-bold font-uppercase">Robert Razer</span>
+                <small class="text-muted">Пользователь</small>
+                <div>
+                    <div class="m-t-md m-b-xs">
+                        <svg class="" width="20" height="20">
+                            <use xlink:href="#sprite-star-full"></use>
+                        </svg>
+                        <svg class="" width="20" height="20">
+                            <use xlink:href="#sprite-star-full"></use>
+                        </svg>
+                        <svg class="" width="20" height="20">
+                            <use xlink:href="#sprite-star-full"></use>
+                        </svg>
+                        <svg class="" width="20" height="20">
+                            <use xlink:href="#sprite-star-full"></use>
+                        </svg>
+                        <svg class="" width="20" height="20">
+                            <use xlink:href="#sprite-star"></use>
+                        </svg>
+                    </div>
+                    <small class="text-muted">Рейтинг: 4</small>
+                </div>
+                <div>
+                    <h4 class="font-extra-bold m-b-xs">
+                        $260 104,200
+                    </h4>
+                    <small class="text-muted">Прибыль за последний период</small>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav-buttons">
+            <button class="btn btn-primary button-nav button-open">Отрыть меню</button>
+            <button class="btn btn-primary button-nav button-close">Закрыть меню</button>
+        </ul>
+
+        <ul class="nav" id="side-menu">
+            <li>
+                <a href="index.html"> <span class="nav-label">Вернуться на главную</span></a>
+            </li>
+            <li>
+                <a href="dealings.html"> <span class="nav-label">Сделки</span></a>
+            </li>
+            <li class="active">
+                <a href="purse.html">
+                    <svg class="" width="20" height="20">
+                        <use xlink:href="#sprite-ruble-sign"></use>
+                    </svg>
+                    <span class="nav-label">Кошельки</span></a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="nav-label">Настройки</span>
+                    <svg class="" width="14" height="14">
+                        <use xlink:href="#sprite-chevron-left"></use>
+                    </svg>
+                </a>
+                <ul class="nav nav-second-level">
+                    <li><a href="profile.html">Профиля</a></li>
+                    <li><a href="alerts.html">Оповещений</a></li>
+                    <li><a href="security.html">Безопасности</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="content-page">
+        <div id="wrapper">
+            <div class="normalheader transition">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <h2 class="font-light m-b-xs">
+                            Настройки профиля
+                        </h2>
+                        <small>Show user data in clear profile design</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+
+                <div class="row">
+                    <div class="hpanel">
+                        <div class="panel-body">
+                            <form method="post" action="../profile/">
+                                <div class="form-group m-b-md">
+                                    <div class="checkbox m-b">
+                                        <input class="form-checkbox" type="checkbox" id="checkbox">
+                                        <label for="checkbox">Сохранять историю сделок</label>
+                                    </div>
+                                </div>
+                                <div class="m-b-md">
+                                    <div class="form-group">
+                                        <label for="new-name" class="text-primary-2">Изменить имя</label>
+                                        <input type="text" placeholder="example"
+                                               title="Пожалуйста, введите ваше имя" value="" id="new-name"
+                                               class="form-control" name="">
+                                    </div>
+                                </div>
+                                <div class="row m-b-md">
+                                    <div class="form-group">
+                                        <div class="font-extra-bold text-primary-2 m-b">
+                                            Изменить пароль
+                                        </div>
+                                        <label for="old-password">Введите старый пароль</label>
+                                        <input type="password" value="" id="old-password" class="form-control" name="">
+                                        <label for="new-password" class="m-t">Новый пароль</label>
+                                        <input type="password" value="" id="new-password" class="form-control" name="">
+                                        <label for="new-password-copy" class="m-t">Повторите новый пароль</label>
+                                        <input type="password" value="" id="new-password-copy" class="form-control" name="">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="font-extra-bold text-primary-2 m-b">
+                                            Изменить Email
+                                        </div>
+                                        <label for="old-email">Введите старый Email</label>
+                                        <input type="" value="" id="old-email" class="form-control" name="">
+                                        <label for="new-email" class="m-t">Новый Email</label>
+                                        <input type="" value="" id="new-email" class="form-control" name="">
+                                        <label for="new-email-copy" class="m-t">Повторите новый Email</label>
+                                        <input type="" value="" id="new-email-copy" class="form-control" name="">
+                                    </div>
+
+                                </div>
+                                <div class="text-center m-b">
+                                    <button class="btn btn-default">Отменить</button>
+                                    <button class="btn btn-primary">Сохранить изменения</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <!-- Footer -->
+    <p>
+        Example text
+    </p>
+    <p>
+        Company 2015-2020
+    </p>
+</footer>
+
+
+<script src="js/app.js"></script>
+<script src="js/picturefill.js"></script>
+
+</body>
+</html>

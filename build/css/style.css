@@ -452,6 +452,15 @@ h3 {
 h4 {
   font-size: 20px;
 }
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 img {
   vertical-align: top;
   max-width: 100%;
@@ -657,6 +666,29 @@ body.fixed-footer .footer {
   padding-left: 20px;
   padding-right: 20px;
 }
+.purse-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  .purses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .purse {
+    width: 49%;
+  }
+}
 .inner-page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,6 +791,9 @@ nav {
     position: fixed;
     min-height: calc(100vh - 60px - 48px);
     width: 190px;
+    top: 60px;
+    bottom: 50px;
+    overflow: scroll;
   }
   .profile-picture {
     display: block;
@@ -787,6 +822,7 @@ nav {
     position: relative;
     width: 100%;
     max-width: calc(100% - 180px);
+    min-height: calc(100vh - 60px - 48px);
   }
   .normalheader {
     padding: 40px 40px 0;
