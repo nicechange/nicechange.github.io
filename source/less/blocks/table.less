@@ -1,0 +1,80 @@
+
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.footable {
+  width: 100%;
+}
+
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
+
+//
+// Basic Bootstrap table
+//
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent; // Reset for nesting within parents with `background-color`.
+}
+
+th,
+td {
+  padding: 5px;
+  vertical-align: middle;
+  border-top: 1px solid #ddd;
+  text-align: left;
+}
+
+th span,
+td span {
+  vertical-align: middle;
+}
+
+thead th {
+  vertical-align: bottom;
+  border-bottom: none;
+  border-top: none;
+}
+
+
+.table {
+  //background-color: @body-bg;
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+}
+
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+

@@ -1,0 +1,101 @@
+* {
+   //outline: 1px dashed red;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  height: 100%;
+  // width: 320px;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  color: @text-color;
+  background-color: @body-bg;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.h2, h2 {
+  font-size: 30px;
+}
+
+.h3, h3 {
+  font-size: 24px;
+}
+
+.h4, h4 {
+  font-size: 20px;
+}
+
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.inner-page {
+  padding-top: 60px;
+}
+
+
+.inner-page-body {
+  background-color: #f8f9fb;
+}
+
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
+
