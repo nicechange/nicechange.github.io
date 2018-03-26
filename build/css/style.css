@@ -1702,6 +1702,9 @@ thead th {
   text-align: left;
   margin-left: 55px;
 }
+.message-author {
+  color: #6a6c6f;
+}
 .message-date {
   font-size: 10px;
   color: #888888;
