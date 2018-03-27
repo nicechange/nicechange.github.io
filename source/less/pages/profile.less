@@ -1,0 +1,36 @@
+.profile-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.profile-form-wrapper-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+.security-form-btn span {
+  vertical-align: middle;
+}
+
+@media (min-width: @tablet-width) {
+  .profile-form {
+    max-width: 600px;
+  }
+
+  .profile-form-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile-form-wrapper .form-group{
+    width: 45%;
+  }
+
+  .profile-form-wrapper-buttons {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}

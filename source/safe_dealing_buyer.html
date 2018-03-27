@@ -109,7 +109,7 @@
                     </svg>
                     <span class="nav-label">Кошельки</span></a>
             </li>
-            <li class="active">
+            <li>
                 <a href="#">
                     <span class="nav-label">Настройки</span>
                     <svg class="" width="14" height="14">
@@ -118,7 +118,7 @@
                 </a>
                 <ul class="nav nav-second-level">
                     <li><a href="rates.html">Курса валют</a></li>
-                    <li class="active"><a href="profile.html">Профиля</a></li>
+                    <li><a href="profile.html">Профиля</a></li>
                     <li><a href="alerts.html">Оповещений</a></li>
                     <li><a href="security.html">Безопасности</a></li>
                 </ul>
@@ -133,7 +133,7 @@
                 <div class="hpanel">
                     <div class="panel-body">
                         <h2 class="font-light m-b-xs">
-                            Настройки профиля
+                            Безопасная сделка (Покупатель)
                         </h2>
                         <small>Show user data in clear profile design</small>
                     </div>
@@ -142,67 +142,64 @@
 
             <div class="content">
 
-                <div class="hpanel">
-                    <div class="panel-body">
-                        <form class="profile-form" method="post" action="../profile/">
-                            <div class="form-group m-b-xl">
-                                <div class="checkbox m-b">
-                                    <input class="form-checkbox" type="checkbox" id="checkbox">
-                                    <label for="checkbox">Сохранять историю сделок</label>
-                                </div>
-                            </div>
-                            <div class="m-b-xl">
-                                <div class="form-group">
-                                    <label for="new-name" class="text-primary-2 font-bold">Изменить имя</label>
-                                    <input type="text" placeholder="example"
-                                           title="Пожалуйста, введите ваше имя" value="" id="new-name"
-                                           class="form-control" name="">
-                                </div>
-                            </div>
-                            <div class="profile-form-wrapper  m-b-xl">
-                                <div class="form-group">
-                                    <div class="font-extra-bold text-primary-2 m-b-md">
-                                        Изменить пароль
-                                    </div>
-                                    <label for="old-password">Введите старый пароль</label>
-                                    <input type="password" placeholder="******"
-                                           title="Пожалуйста, введите ваш старый пароль" value="" id="old-password"
-                                           class="form-control" name="">
-                                    <label for="new-password" class="m-t">Новый пароль</label>
-                                    <input type="password" placeholder="******"
-                                           title="Пожалуйста, введите ваш новый пароль" value="" id="new-password"
-                                           class="form-control" name="">
-                                    <label for="new-password-copy" class="m-t">Повторите новый пароль</label>
-                                    <input type="password" placeholder="******"
-                                           title="Пожалуйста, повторите ваш новый пароль" value=""
-                                           id="new-password-copy" class="form-control" name="">
-                                </div>
-                                <div class="form-group">
-                                    <div class="font-extra-bold text-primary-2 m-b-md">
-                                        Изменить Email
-                                    </div>
-                                    <label for="old-email">Введите старый Email</label>
-                                    <input type="email" placeholder="example@gmail.com"
-                                           title="Пожалуйста, введите ваш старый email" value="" id="old-email"
-                                           class="form-control" name="">
-                                    <label for="new-email" class="m-t">Новый Email</label>
-                                    <input type="email" placeholder="example@gmail.com"
-                                           title="Пожалуйста, введите ваш новый email" value="" id="new-email"
-                                           class="form-control" name="">
-                                    <label for="new-email-copy" class="m-t">Повторите новый Email</label>
-                                    <input type="email" placeholder="example@gmail.com"
-                                           title="Пожалуйста, повторите ваш новый email" value="" id="new-email-copy"
-                                           class="form-control" name="">
-                                </div>
+                <div class="row purses">
 
+                    <div class="hpanel hyellow purse">
+                        <div class="panel-heading hbuilt">
+                            <h4 class="purse-header">
+                                <svg class="" width="26" height="26">
+                                    <use xlink:href="#sprite-btc"></use>
+                                </svg>
+                                <span>Bitcoin</span>
+                            </h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row m-b">
+                                <div class="col-lg-12">
+                                    Остаток на счёте:
+                                    <span class="text-muted font-extra-bold">567,000.00RUB</span>
+                                </div>
                             </div>
-                            <div class="profile-form-wrapper-buttons text-center m-b">
-                                <button type="submit" class="btn btn-primary m-b m-r m-l">Сохранить изменения</button>
-                                <button class="btn btn-default ">Отменить</button>
+                            <div class="row text-center">
+                                <a class="btn btn-primary" href="#">Получить</a>
+                                <a class="btn btn-default" href="#">Перевести</a>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+
+
+                    <div class="hpanel hyellow purse">
+                        <div class="panel-heading hbuilt">
+                            <h4 class="purse-header">
+                                <svg class="" width="26" height="26">
+                                    <use xlink:href="#sprite-ethereum"></use>
+                                </svg>
+                                <span>Ethereum</span>
+                            </h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row m-b">
+                                <div class="col-lg-12">
+                                    Остаток на счёте:
+                                    <span class="text-muted font-extra-bold">567,000.00RUB</span>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <a class="btn btn-primary" href="#">Получить</a>
+                                <a class="btn btn-default" href="#">Перевести</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
+                <div class="hpanel">
+                    <div class="panel-body text-center">
+                        <a class="btn btn-default">Отмена</a>
+                        <a class="btn btn-primary">Создать новый кошелек</a>
+                    </div>
+                </div>
+
 
             </div>
         </div>

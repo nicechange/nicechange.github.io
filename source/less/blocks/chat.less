@@ -2,6 +2,7 @@
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .chat {
@@ -16,8 +17,45 @@
 
 .chat-heading {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chat-heading span {
+  margin-right: auto;
+}
+
+.chat-tool {
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.chat-tool:hover,
+.chat-tool:focus {
+  opacity: 0.5;
+}
+
+.chat-tool:active{
+  opacity: 0.7;
+}
+
+.chat-tool-collapse {
+  background-image: url("/img/sprite-chevron-down.svg");
+}
+
+.chat-tool-open {
+  background-image: url("/img/sprite-chevron-up.svg");
+}
+
+.chat-tool-close {
+  background-image: url("/img/sprite-times.svg");
 }
 
 .chat-footer {

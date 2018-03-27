@@ -116,8 +116,8 @@
                     </svg>
                 </a>
                 <ul class="nav nav-second-level">
-                    <li><a href="rates.html">Курса валют</a></li>
-                    <li class="active"><a href="profile.html">Профиля</a></li>
+                    <li class="active"><a href="rates.html">Курса валют</a></li>
+                    <li><a href="profile.html">Профиля</a></li>
                     <li><a href="alerts.html">Оповещений</a></li>
                     <li><a href="security.html">Безопасности</a></li>
                 </ul>
@@ -132,7 +132,7 @@
                 <div class="hpanel">
                     <div class="panel-body">
                         <h2 class="font-light m-b-xs">
-                            Настройки профиля
+                            Настройки курса валют
                         </h2>
                         <small>Show user data in clear profile design</small>
                     </div>
@@ -143,49 +143,167 @@
 
                 <div class="hpanel">
                     <div class="panel-body">
-                        <form class="profile-form" method="post" action="../profile/">
-                            <div class="form-group m-b-xl">
-                                <div class="checkbox m-b">
-                                    <input class="form-checkbox" type="checkbox" id="checkbox">
-                                    <label for="checkbox">Сохранять историю сделок</label>
-                                </div>
+                        <form class="rates-form" method="post" action="../profile/">
+                            <div class="rates-form-wrapper m-b">
+                                <label class="text-primary-2 font-bold" for="exchange">
+                                    Биржа:
+                                </label>
+                                <select class="form-control" name="account" id="exchange">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                </select>
                             </div>
-                            <div class="m-b-xl">
-                                <div class="form-group">
-                                    <label for="new-name" class="text-primary-2 font-bold">Изменить имя</label>
-                                    <input type="text" placeholder="example" title="Пожалуйста, введите ваше имя" value="" id="new-name" class="form-control" name="">
-                                </div>
+                            <div class="rates-form-wrapper m-b">
+                                <label class="text-primary-2 font-bold" for="currency">
+                                    Тип валюты:
+                                </label>
+                                <select class="form-control" name="account" id="currency">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                </select>
                             </div>
-                            <div class="profile-form-wrapper  m-b-xl">
-                                <div class="form-group">
-                                    <div class="font-extra-bold text-primary-2 m-b-md">
-                                        Изменить пароль
-                                    </div>
-                                    <label for="old-password">Введите старый пароль</label>
-                                    <input type="password" placeholder="******" title="Пожалуйста, введите ваш старый пароль" value="" id="old-password" class="form-control" name="">
-                                    <label for="new-password" class="m-t">Новый пароль</label>
-                                    <input type="password" placeholder="******" title="Пожалуйста, введите ваш новый пароль" value="" id="new-password" class="form-control" name="">
-                                    <label for="new-password-copy" class="m-t">Повторите новый пароль</label>
-                                    <input type="password" placeholder="******" title="Пожалуйста, повторите ваш новый пароль" value="" id="new-password-copy" class="form-control" name="">
-                                </div>
-                                <div class="form-group">
-                                    <div class="font-extra-bold text-primary-2 m-b-md">
-                                        Изменить Email
-                                    </div>
-                                    <label for="old-email">Введите старый Email</label>
-                                    <input type="email" placeholder="example@gmail.com" title="Пожалуйста, введите ваш старый email" value="" id="old-email" class="form-control" name="">
-                                    <label for="new-email" class="m-t">Новый Email</label>
-                                    <input type="email" placeholder="example@gmail.com" title="Пожалуйста, введите ваш новый email" value="" id="new-email" class="form-control" name="">
-                                    <label for="new-email-copy" class="m-t">Повторите новый Email</label>
-                                    <input type="email" placeholder="example@gmail.com" title="Пожалуйста, повторите ваш новый email" value="" id="new-email-copy" class="form-control" name="">
-                                </div>
-
+                            <div class="rates-form-wrapper m-b">
+                                <label class="text-primary-2 font-bold" for="type-of-transaction">
+                                    Тип сделки:
+                                </label>
+                                <select class="form-control" name="account" id="type-of-transaction">
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                    <option>option 4</option>
+                                </select>
+                            </div>
+                            <div class="rates-form-wrapper m-b-xl">
+                                <label for="percent" class="text-primary-2 font-bold">
+                                    Процент:
+                                </label>
+                                <input type="text" placeholder="10" title="Пожалуйста, количество процентов" value="" id="percent" class="form-control" name="">
                             </div>
                             <div class="profile-form-wrapper-buttons text-center m-b">
                                 <button type="submit" class="btn btn-primary m-b m-r m-l">Сохранить изменения</button>
                                 <button class="btn btn-default ">Отменить</button>
                             </div>
                         </form>
+                    </div>
+                </div>
+
+                <div class="hpanel">
+                    <div class="panel-body">
+
+                        <div class="panel-heading m-b-md">
+                            <h4 class="text-primary-2">Список сохраненных настроек
+                            </h4>
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-condensed table-striped footable table-hover">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        <span>Биржа</span>
+                                        <a class="sort-indicator">Сортировать</a>
+                                    </th>
+                                    <th>
+                                        <span>Тип валюты</span>
+                                        <a class="sort-indicator sort-up">Сортировать</a>
+                                    </th>
+                                    <th>
+                                        <span>Тип сделки</span>
+                                        <a class="sort-indicator sort-down">Сортировать</a>
+                                    </th>
+                                    <th>
+                                        <span>Процент</span>
+                                        <a class="sort-indicator">Сортировать</a>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Bitterix</td>
+                                    <td>BTC</td>
+                                    <td>Продажа</td>
+                                    <td>10%</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-default" href="#">Удалить
+                                        </a>
+                                        <a class="btn btn-primary" href="#">
+                                            Использовать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Bitterix</td>
+                                    <td>BTC</td>
+                                    <td>Покупка</td>
+                                    <td>5%</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-default" href="#">Удалить
+                                        </a>
+                                        <a class="btn btn-primary" href="#">
+                                            Использовать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kraken</td>
+                                    <td>BTC</td>
+                                    <td>Продажа</td>
+                                    <td>50%</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-default" href="#">Удалить
+                                        </a>
+                                        <a class="btn btn-primary" href="#">
+                                            Использовать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kraken</td>
+                                    <td>ETH</td>
+                                    <td>Продажа</td>
+                                    <td>0.5%</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-default" href="#">Удалить
+                                        </a>
+                                        <a class="btn btn-primary" href="#">
+                                            Использовать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Kraken</td>
+                                    <td>BTC</td>
+                                    <td>Покупка</td>
+                                    <td>4%</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-default" href="#">Удалить
+                                        </a>
+                                        <a class="btn btn-primary" href="#">
+                                            Использовать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Poloniex</td>
+                                    <td>ETH</td>
+                                    <td>Покупка</td>
+                                    <td>7.5%</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-default" href="#">Удалить
+                                        </a>
+                                        <a class="btn btn-primary" href="#">
+                                            Использовать
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                     </div>
                 </div>
 
