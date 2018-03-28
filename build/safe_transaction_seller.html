@@ -108,7 +108,7 @@
                     </svg>
                     <span class="nav-label">Кошельки</span></a>
             </li>
-            <li class="active">
+            <li>
                 <a href="#">
                     <span class="nav-label">Настройки</span>
                     <svg class="" width="14" height="14">
@@ -118,7 +118,7 @@
                 <ul class="nav nav-second-level">
                     <li><a href="rates.html">Курса валют</a></li>
                     <li><a href="profile.html">Профиля</a></li>
-                    <li class="active"><a href="alerts.html">Оповещений</a></li>
+                    <li><a href="alerts.html">Оповещений</a></li>
                 </ul>
             </li>
         </ul>
@@ -131,7 +131,7 @@
                 <div class="hpanel">
                     <div class="panel-body">
                         <h2 class="font-light m-b-xs">
-                            Настройки профиля
+                            Безопасная сделка (Продавец)
                         </h2>
                         <small>Show user data in clear profile design</small>
                     </div>
@@ -142,36 +142,90 @@
 
                 <div class="hpanel">
                     <div class="panel-body">
-                        <form class="alerts-form" method="post">
-                            <div class="alerts-form-wrapper m-b-xl">
-                                <span class="text-primary-2 font-bold m-b m-r">Получать оповещения при:</span>
-                                <div>
-                                    <div class="checkbox m-b">
-                                        <input class="form-checkbox" type="checkbox" id="check-one">
-                                        <label for="check-one">Option one</label>
-                                    </div>
-                                    <div class="checkbox m-b">
-                                        <input class="form-checkbox" type="checkbox" id="check-two">
-                                        <label for="check-two">Option two</label>
-                                    </div>
-                                    <div class="checkbox m-b">
-                                        <input class="form-checkbox" type="checkbox" id="check-three">
-                                        <label for="check-three">Option three</label>
-                                    </div>
-                                    <div class="checkbox m-b">
-                                        <input class="form-checkbox" type="checkbox" id="check-four">
-                                        <label for="check-four">Option four</label>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="alerts-form-wrapper-buttons">
-                                <button class="btn btn-primary m-b m-r m-l" type="submit">Сохранить изменения</button>
-                                <button class="btn btn-default">Отменить</button>
-                            </div>
-                        </form>
+                        <div class="panel-heading m-b-md">
+                            <h4 class="text-primary-2">
+                                Выберите кошелек для совершения сделки
+                            </h4>
+                        </div>
+
+                        <div class="table-responsive m-b-xl">
+                            <table class="table table-condensed table-striped table-hover">
+                                <thead>
+                                <tr>
+                                    <th nowrap="">
+                                        <span>Адрес кошелька</span>
+                                        <a class="sort-indicator">Сортировать</a>
+                                    </th>
+                                    <th nowrap="">
+                                        <span>Баланс</span>
+                                        <a class="sort-indicator sort-up">Сортировать</a>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right" nowrap="">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="text-primary-2 text-bold m-b-xl">
+                            <p>Выбранный кошелек для списания:
+                                <span class="text-muted text-overflow">
+                                1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
+                            </span>
+                        </p></div>
+                        <div class="panel-footer text-center m-b">
+                            <button type="submit" class="btn btn-primary m-b m-r m-l">Заключить сделку</button>
+                            <button class="btn btn-default m-b">Отменить</button>
+                        </div>
                     </div>
                 </div>
+
 
             </div>
         </div>

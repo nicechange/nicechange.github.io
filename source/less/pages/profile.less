@@ -1,29 +1,69 @@
-.profile-form {
-  max-width: 400px;
-  margin: 0 auto;
+.profile-content form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+.profile-form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-form-wrapper .form-group{
+  width: 45%;
+  flex-basis: 250px;
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.profile-form-wrapper-buttons {
+  flex-direction: row-reverse;
+}
+
 .profile-form-wrapper-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
 }
-.security-form-btn span {
+.profile-form-social-btn span {
   vertical-align: middle;
+}
+
+.profile-form-social-btn.active .btn {
+  position: relative;
+  margin-left: 30px;
+}
+
+.profile-form-social-btn.active .btn:before {
+  content: "";
+  display: inline-block;
+  height: 22px;
+  width: 12px;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  margin-top: -14px;
+  border: 2px solid @color-green;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg);
 }
 
 @media (min-width: @tablet-width) {
   .profile-form {
-    max-width: 600px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .profile-content .hpanel {
+    flex-basis: 48%;
   }
 
   .profile-form-wrapper {
     display: flex;
     justify-content: space-between;
-  }
-
-  .profile-form-wrapper .form-group{
-    width: 45%;
   }
 
   .profile-form-wrapper-buttons {
@@ -32,5 +72,26 @@
 }
 
 @media (min-width: @desktop-width) {
+  .profile-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .profile-content .panel-body,
+  .profile-content form {
+    height: 100%;
+  }
+
+  .profile-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .profile-form-wrapper-buttons {
+    margin-top: auto;
+  }
 
 }

@@ -105,6 +105,18 @@
   color: @color-blue;
 }
 
+.btn-disabled {
+  cursor: no-drop;
+}
+
+.btn-disabled:hover,
+.btn-disabled:focus,
+.btn-disabled:active {
+  background-color: @body-bg;
+  border-color: @border-color;
+  color: @color-text;
+}
+
 .btn-block+.btn-block {
   margin-top: 5px;
 }

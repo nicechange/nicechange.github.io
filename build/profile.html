@@ -90,8 +90,8 @@
         </div>
 
         <ul class="nav-buttons">
-            <button class="btn btn-primary button-nav button-open">Отрыть меню</button>
-            <button class="btn btn-primary button-nav button-close">Закрыть меню</button>
+            <button class="btn btn-primary button-nav button-open" type="button">Отрыть меню</button>
+            <button class="btn btn-primary button-nav button-close" type="button">Закрыть меню</button>
         </ul>
 
         <ul class="nav" id="side-menu">
@@ -119,7 +119,6 @@
                     <li><a href="rates.html">Курса валют</a></li>
                     <li class="active"><a href="profile.html">Профиля</a></li>
                     <li><a href="alerts.html">Оповещений</a></li>
-                    <li><a href="security.html">Безопасности</a></li>
                 </ul>
             </li>
         </ul>
@@ -139,17 +138,72 @@
                 </div>
             </div>
 
-            <div class="content">
+            <div class="content profile-content">
+
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <form class="profile-form" method="get">
+                            <div>
+                                <div class="checkbox m-b">
+                                    <input class="form-checkbox" type="checkbox" id="checkbox-history">
+                                    <label for="checkbox-history">Сохранять историю сделок</label>
+                                </div>
+                            </div>
+                            <div class="m-b-xl">
+                                <div class="checkbox m-b">
+                                    <input class="form-checkbox" type="checkbox" id="checkbox-authorization">
+                                    <label class="control-label" for="checkbox-authorization">Включить двухфакторную
+                                        авторизацию</label>
+                                </div>
+                            </div>
+                            <div class="profile-form-wrapper m-b-xl">
+                                <p class="text-primary-2 font-bold m-r m-b">
+                                    Авторизоваться с помощью:
+                                </p>
+
+                                <div class="form-group">
+                                    <div class="profile-form-social-btn m-b active">
+                                        <a class="btn btn-default btn-disabled">
+                                            <svg class="m-r-xs" width="20" height="20">
+                                                <use xlink:href="#sprite-google-plus-g"></use>
+                                            </svg>
+                                            <span>Google</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="m-b">
+                                        <a class="btn btn-default" href="/auth/google">
+                                            facebook
+                                        </a>
+                                    </div>
+                                    <div class="m-b">
+                                        <a class="btn btn-default" href="/auth/google">
+                                            vk
+                                        </a>
+                                    </div>
+                                    <div class="m-b">
+                                        <a class="btn btn-default" href="/auth/google">
+                                            instagram
+                                        </a>
+                                    </div>
+                                    <div class="m-b">
+                                        <a class="btn btn-default" href="/auth/google">
+                                            linkedin
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group profile-form-wrapper-buttons">
+                                <button class="btn btn-primary m-b m-r m-l" type="submit">Сохранить изменения</button>
+                                <button class="btn btn-default" type="submit">Отменить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
                 <div class="hpanel">
                     <div class="panel-body">
                         <form class="profile-form" method="post" action="../profile/">
-                            <div class="form-group m-b-xl">
-                                <div class="checkbox m-b">
-                                    <input class="form-checkbox" type="checkbox" id="checkbox">
-                                    <label for="checkbox">Сохранять историю сделок</label>
-                                </div>
-                            </div>
                             <div class="m-b-xl">
                                 <div class="form-group">
                                     <label for="new-name" class="text-primary-2 font-bold">Изменить имя</label>

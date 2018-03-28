@@ -119,7 +119,6 @@
                     <li><a href="rates.html">Курса валют</a></li>
                     <li><a href="profile.html">Профиля</a></li>
                     <li><a href="alerts.html">Оповещений</a></li>
-                    <li><a href="security.html">Безопасности</a></li>
                 </ul>
             </li>
         </ul>
@@ -141,61 +140,89 @@
 
             <div class="content">
 
-                <div class="row purses">
-
-                    <div class="hpanel hyellow purse">
-                        <div class="panel-heading hbuilt">
-                            <h4 class="purse-header">
-                                <svg class="" width="26" height="26">
-                                    <use xlink:href="#sprite-btc"></use>
-                                </svg>
-                                <span>Bitcoin</span>
-                            </h4>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row m-b">
-                                <div class="col-lg-12">
-                                    Остаток на счёте:
-                                    <span class="text-muted font-extra-bold">567,000.00RUB</span>
-                                </div>
-                            </div>
-                            <div class="row text-center">
-                                <a class="btn btn-primary" href="#">Получить</a>
-                                <a class="btn btn-default" href="#">Перевести</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="hpanel hyellow purse">
-                        <div class="panel-heading hbuilt">
-                            <h4 class="purse-header">
-                                <svg class="" width="26" height="26">
-                                    <use xlink:href="#sprite-ethereum"></use>
-                                </svg>
-                                <span>Ethereum</span>
-                            </h4>
-                        </div>
-                        <div class="panel-body">
-                            <div class="row m-b">
-                                <div class="col-lg-12">
-                                    Остаток на счёте:
-                                    <span class="text-muted font-extra-bold">567,000.00RUB</span>
-                                </div>
-                            </div>
-                            <div class="row text-center">
-                                <a class="btn btn-primary" href="#">Получить</a>
-                                <a class="btn btn-default" href="#">Перевести</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
                 <div class="hpanel">
-                    <div class="panel-body text-center">
-                        <a class="btn btn-default">Отмена</a>
-                        <a class="btn btn-primary">Создать новый кошелек</a>
+                    <div class="panel-body">
+
+                        <div class="panel-heading m-b-md">
+                            <h4 class="text-primary-2">
+                                Выберите кошелек для совершения сделки
+                            </h4>
+                        </div>
+
+                        <div class="table-responsive m-b-xl">
+                            <table class="table table-condensed table-striped table-hover">
+                                <thead>
+                                <tr>
+                                    <th nowrap="">
+                                        <span>Адрес кошелька</span>
+                                        <a class="sort-indicator">Сортировать</a>
+                                    </th>
+                                    <th nowrap="">
+                                        <span>Баланс</span>
+                                        <a class="sort-indicator sort-up">Сортировать</a>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td nowrap="">1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td nowrap="">0.00000000</td>
+                                    <td class="text-right" nowrap="">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                    <td>0.00000000</td>
+                                    <td class="text-right">
+                                        <a class="btn btn-primary" href="#">
+                                            Выбрать
+                                        </a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="text-primary-2 text-bold m-b-xl">
+                            <p>Выбранный кошелек для поступлений:
+                            <span class="text-muted text-overflow">
+                                1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
+                            </span>
+                        </p></div>
+                        <div class="panel-footer text-center m-b">
+                            <button type="submit" class="btn btn-primary m-b m-r m-l">Отправить фиат</button>
+                            <button class="btn btn-default m-b">Отменить</button>
+                        </div>
                     </div>
                 </div>
 
