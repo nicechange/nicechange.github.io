@@ -635,27 +635,13 @@ body.fixed-footer .footer {
   color: #737373;
 }
 .register-container {
-  max-width: 720px;
+  max-width: 420px;
   margin: auto;
   padding-top: 2%;
 }
 .register-header {
   padding-left: 20px;
   padding-right: 20px;
-}
-@media (min-width: 768px) {
-  .register-form-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .register-form-wrapper .form-group {
-    -ms-flex-preferred-size: 48%;
-        flex-basis: 48%;
-  }
 }
 .error-container {
   max-width: 720px;
@@ -665,6 +651,39 @@ body.fixed-footer .footer {
 .error-header {
   padding-left: 20px;
   padding-right: 20px;
+}
+.purse-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.purse-header span {
+  margin-right: auto;
+}
+.purse-remove {
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-image: url("../img/sprite-times.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+}
+.purse-remove:hover,
+.purse-remove:focus {
+  opacity: 0.5;
+}
+.purse-remove:active {
+  opacity: 0.7;
 }
 .purse-header {
   display: -webkit-box;
@@ -1862,6 +1881,42 @@ thead th {
 .table-hover tbody tr:hover {
   background-color: #f5f5f5;
 }
+.table-bordered,
+.table-responsive > .table-bordered {
+  border: 0;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border-left: 0;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border-right: 0;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border-top: 0;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border-bottom: 0;
+}
 .sort-indicator {
   font-size: 0;
   display: inline-block;
@@ -1915,12 +1970,18 @@ thead th {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .chat-heading span {
   margin-right: auto;
+}
+.chat-heading small {
+  width: 100%;
+  font-weight: normal;
 }
 .chat-tool {
   width: 20px;
@@ -1932,6 +1993,7 @@ thead th {
   border: none;
   cursor: pointer;
   opacity: 0.3;
+  margin-bottom: auto;
 }
 .chat-tool:hover,
 .chat-tool:focus {

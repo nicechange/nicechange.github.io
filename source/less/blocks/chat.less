@@ -19,11 +19,16 @@
 .chat-heading {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .chat-heading span {
   margin-right: auto;
+}
+.chat-heading small {
+  width: 100%;
+  font-weight: normal;
 }
 
 .chat-tool {
@@ -36,6 +41,7 @@
   border: none;
   cursor: pointer;
   opacity: 0.3;
+  margin-bottom: auto;
 }
 
 .chat-tool:hover,
