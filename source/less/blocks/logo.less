@@ -1,15 +1,33 @@
 .logo {
   width: 100px;
+
+  &--header {
+    height: 55px;
+    width: 60px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    background-color: #fff;
+    text-align: left;
+  }
+
+  &--footer {
+    margin-right: auto;
+  }
 }
 
-.logo-header {
-  height: 55px;
-  width: 200px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 33px;
-  padding-right: 10px;
-  border: none;
-  background-color: #fff;
-  text-align: left;
+@media (min-width: @tablet-width) {
+  .logo--header {
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-page-header .logo {
+    &--header {
+      width: 200px;
+      padding-left: 33px;
+      padding-right: 10px;
+    }
+  }
 }

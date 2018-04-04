@@ -1,0 +1,380 @@
+.landing-page section {
+  padding: 50px 0 50px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.steps-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.step {
+  width: 100%;
+  margin-bottom: 70px;
+  position: relative;
+
+  &:nth-child(1) {
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 2;
+  }
+
+  &:nth-child(3) {
+    order: 3;
+  }
+
+  &:nth-child(4) {
+    order: 6;
+  }
+
+  &:nth-child(5) {
+    order: 5;
+  }
+
+  &:nth-child(6) {
+    order: 4;
+  }
+
+  &:nth-child(7) {
+    order: 7;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url('../img/arrow-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 30px;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:last-of-type::after {
+    display: none;
+  }
+
+  .step__img {
+    margin-bottom: 15px;
+  }
+}
+
+.why {
+  background: #fff;
+}
+
+.why-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.advantage {
+  width: 100%;
+
+  h5 {
+    font-weight: 600;
+  }
+
+  p {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 400px;
+  }
+}
+
+.slick-slider {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.slick-arrow {
+  display: none!important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: @color-orange;
+}
+
+.slick-dots {
+  max-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.comment__ava {
+  width: 180px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.comment__text {
+  max-width: 400px;
+}
+
+.comment__name {
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    width: 750px;
+  }
+
+  .step {
+    width: 48%;
+
+    &::after {
+      display: none;
+    }
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 4;
+    }
+
+    &:nth-child(4) {
+      order: 6;
+    }
+
+    &:nth-child(5) {
+      order: 5;
+    }
+
+    &:nth-child(6) {
+      order: 3;
+    }
+
+    &:nth-child(7) {
+      order: 7;
+    }
+  }
+
+  .step__img {
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 26px;
+      height: 30px;
+      bottom: -50px;
+      left: 50%;
+    }
+
+    &--1::after {
+      background-image: url('../img/landing/errow-right.png');
+      top: 50%;
+      margin-top: 0;
+      right: 0;
+      left: inherit;
+      transform: translateX(60%);
+      margin-left: 0;
+      width: 80px;
+      height: 60px;
+    }
+
+    &--2::after {
+      background-image: url('../img/landing/errow-round-left.png');
+      top: 50%;
+      margin-top: -30px;
+      left: initial;
+      right: -5%;
+      margin-right: 0;
+      width: 96px;
+      height: 230px;
+    }
+
+    &--3::after {
+      background-image: url('../img/landing/errow-left.png');
+      top: 50%;
+      margin-top: 0;
+      left: 0;
+      //margin-left: -30px;
+      transform: translateX(-60%);
+      width: 80px;
+      height: 60px;
+    }
+
+    &--4::after {
+      background-image: url('../img/landing/errow-round-right.png');
+      top: 50%;
+      margin-top: -30px;
+      left: -5%;
+      right: initial;
+      margin-left: 0;
+      width: 96px;
+      height: 230px;
+    }
+
+    &--5::after {
+      background-image: url('../img/landing/errow-right.png');
+      top: 50%;
+      margin-top: 0;
+      right: 0;
+      left: inherit;
+      margin-right: -30px;
+      margin-left: 0;
+      width: 80px;
+      height: 60px;
+    }
+
+    &--6::after {
+      background-image: url('../img/landing/errow-round-left.png');
+      top: 50%;
+      margin-top: -30px;
+      left: initial;
+      right: -5%;
+      margin-right: 0;
+      width: 96px;
+      height: 230px;
+    }
+  }
+
+  .why-wrapper {
+    flex-direction: row;
+  }
+
+  .advantage {
+    width: 30%;
+  }
+
+  .comment {
+    flex-direction: row;
+  }
+
+  .comment__ava {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1130px;
+  }
+
+  .step {
+    width: 30%;
+    margin-bottom: 40px;
+
+    &::after {
+      display: none;
+    }
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 3;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
+
+    &:nth-child(5) {
+      order: 5;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
+
+    &:nth-child(7) {
+      order: 7;
+    }
+  }
+
+  .step__img {
+
+    &--1::after {
+      background-image: url('../img/landing/errow-right.png');
+      top: 50%;
+      margin-top: -30px;
+      right: 0;
+      margin-right: -30px;
+      width: 80px;
+      height: 60px;
+    }
+
+    &--2::after {
+      background-image: url('../img/landing/errow-right.png');
+      top: 50%;
+      margin-top: -30px;
+      right: 0;
+      left: inherit;
+      margin-right: -30px;
+      width: 80px;
+      height: 60px;
+    }
+
+    &--3::after {
+      background-image: url('../img/landing/errow-round-left.png');
+      top: 50%;
+      margin-top: 0;
+      right: -50px;
+      left: inherit;
+      margin-right: -30px;
+      width: 96px;
+      height: 230px;
+    }
+
+    &--4::after {
+      background-image: url('../img/landing/errow-left.png');
+      top: 50%;
+      margin-top: -30px;
+      left: 0;
+      margin-left: -30px;
+      width: 80px;
+      height: 60px;
+    }
+
+    &--5::after {
+      background-image: url('../img/landing/errow-left.png');
+      top: 50%;
+      margin-top: -30px;
+      left: 0;
+      margin-left: -30px;
+      width: 80px;
+      height: 60px;
+    }
+
+    &--6::after {
+      background-image: url('../img/landing/errow-round-right.png');
+      top: 50%;
+      margin-top: 0;
+      left: 0;
+      margin-left: -30px;
+      width: 96px;
+      height: 230px;
+    }
+  }
+}

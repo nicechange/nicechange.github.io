@@ -50,6 +50,10 @@ body {
   font-size: 20px;
 }
 
+.h5, h5 {
+  font-size: 15px;
+}
+
 h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -86,6 +90,13 @@ a {
   overflow: hidden;
 }
 
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .inner-page {
   padding-top: 60px;
 }
@@ -96,7 +107,12 @@ a {
 }
 
 @media (min-width: @tablet-width) {
-
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media (min-width: @desktop-width) {

@@ -30,6 +30,18 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("vendor", function () {
+  return gulp.src([
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/slick-carousel/slick/slick.js",
+    "node_modules/slick-carousel/slick/fonts/**",
+    "node_modules/slick-carousel/slick/ajax-loader.gif"
+  ], {
+    base: "node_modules"
+  })
+  .pipe(gulp.dest("build/vendor"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
@@ -95,7 +107,7 @@ gulp.task("webp", function () {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/",
+    server: "build/"
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
@@ -106,6 +118,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
+    "vendor",
     "style",
     "sprite",
     "html",
