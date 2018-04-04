@@ -30,40 +30,42 @@
             <img width="100" height="auto" src="img/teketoken_logo.png" alt="logo TakeToken">
         </a>
         <h3>Регистрация</h3>
-        <small>Full suported AngularJS WebApp/Admin template with very clean and aesthetic style prepared for your next
-            app.
+        <small>
+            Шаг 2
         </small>
     </div>
     <div class="hpanel">
         <div class="panel-body">
-            <form method="post" action="../register/">
-                <div class="form-group">
-                    <label class="control-label" for="username">Имя</label>
-                    <input type="text" placeholder="example" title="Пожалуйста, введите ваше имя" id="username" class="form-control" name="">
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="password">Пароль</label>
-                    <input type="password" id="password" placeholder="******" class="form-control" name="">
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="password_copy">Повторите пароль</label>
-                    <input type="password" id="password_copy" placeholder="******" class="form-control" name="">
-                </div>
-                <div class="form-group m-b-xl">
-                    <label class="control-label" for="e-mail">Email</label>
-                    <input type="email" id="e-mail" placeholder="example@gmail.com" class="form-control" name="">
-                </div>
-                <div class="text-center m-b">
-                    <a href="prepare.html" class="btn btn-info btn-block">Зарегистрироваться</a>
-                    <button class="btn btn-default btn-block">Отменить</button>
-                    <a class="btn btn-default btn-block" href="/auth/google">
-                        <svg class="" width="24" height="24">
-                            <use xlink:href="#sprite-google-plus-square"></use>
-                        </svg>
-                        <span>Регистрация с помощью Google</span>
-                    </a>
-                </div>
-            </form>
+
+            <h5 class="text-center">
+                Для завершения регистрации пожалуйста, помогите нам защитить ваш аккаунт.
+            </h5>
+            <ol>
+                <li>
+                    Установите <a href="https://ru.wikipedia.org/wiki/Google_Authenticator" class="text-primary-2">Google
+                    Authenticator</a>
+                </li>
+                <li>
+                    Считайте QR-код:
+                    <img src="img/QR_code_for_mobile_English_Wikipedia.svg.png">
+                    <p>
+                        <small>Если вам не удобно, то вы можете ввести текстовый ключ (16 символов):</small>
+                    </p>
+                    <p>
+                        OGJ1F79Q5QE3PO6C
+                    </p>
+                </li>
+            </ol>
+            <div class="text-center m-b">
+                <a href="codeauth.html" class="btn btn-info btn-block">Дальше</a>
+                <button class="btn btn-default btn-block">Отменить</button>
+                <a class="btn btn-default btn-block" href="/auth/google">
+                    <svg class="" width="24" height="24">
+                        <use xlink:href="#sprite-google-plus-square"></use>
+                    </svg>
+                    <span>Регистрация с помощью Google</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>

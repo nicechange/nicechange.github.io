@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Taketoken</title>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="js/app.js" as="script">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext"
+          rel="stylesheet">
+</head>
+
+<body class="light-skin">
+
+<div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+</div>
+
+
+<section class="back-link">
+    <a href="index.html" class="btn btn-primary">Вернуться</a>
+</section>
+
+<section class="register-container">
+
+    <div class="register-header text-center m-b-md">
+        <a href="index.html" class="logo">
+            <img width="100" height="auto" src="img/teketoken_logo.png" alt="logo TakeToken"/>
+        </a>
+        <h3>Регистрация</h3>
+        <small>
+            Шаг 2
+        </small>
+    </div>
+    <div class="hpanel">
+        <div class="panel-body">
+
+            <h5 class="text-center">
+                Для завершения регистрации пожалуйста, помогите нам защитить ваш аккаунт.
+            </h5>
+            <ol>
+                <li>
+                    Установите <a href="https://ru.wikipedia.org/wiki/Google_Authenticator" class="text-primary-2">Google
+                    Authenticator</a>
+                </li>
+                <li>
+                    Считайте QR-код:
+                    <img src="img/QR_code_for_mobile_English_Wikipedia.svg.png">
+                    <p>
+                        <small>Если вам не удобно, то вы можете ввести текстовый ключ (16 символов):</small>
+                    </p>
+                    <p>
+                        OGJ1F79Q5QE3PO6C
+                    </p>
+                </li>
+            </ol>
+            <div class="text-center m-b">
+                <a href="codeauth.html" class="btn btn-info btn-block">Дальше</a>
+                <button class="btn btn-default btn-block">Отменить</button>
+                <a class="btn btn-default btn-block" href="/auth/google">
+                    <svg class="" width="24" height="24">
+                        <use xlink:href="#sprite-google-plus-square"></use>
+                    </svg>
+                    <span>Регистрация с помощью Google</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/app.js"></script>
+<script src="js/picturefill.js"></script>
+
+</body>
+
+</html>
