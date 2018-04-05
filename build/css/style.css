@@ -471,6 +471,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img-responsive {
+  width: 100%;
+}
 svg {
   vertical-align: middle;
   fill: currentColor;
@@ -1288,6 +1291,144 @@ body.fixed-footer .footer {
   padding-left: 20px;
   padding-right: 20px;
 }
+.faq-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .faq-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .faq-wrapper > div {
+    width: 48%;
+  }
+}
+.news-box.hpanel > .panel-heading {
+  background: #fff;
+  border-radius: 2px;
+  padding: 10px 20px;
+  position: relative;
+  font-weight: 500;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.news-box .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.news-box .media > a {
+  margin-right: 15px;
+}
+.news-box .panel-heading .media img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.news-box .panel-image {
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  position: relative;
+}
+.news-box .panel-image .title {
+  position: absolute;
+  bottom: 10px;
+  padding: 0 20px;
+  color: #fff;
+}
+.news-box .panel-image .title a {
+  color: #fff !important;
+}
+.news-box .panel-image .title h4 {
+  margin-bottom: 0px;
+}
+.news-box.hpanel > .panel-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #909295;
+}
+.news-box .panel-footer p {
+  margin: 0;
+}
+.news-link {
+  color: #34495e;
+}
+.news-link:hover,
+.news-link:focus {
+  color: #f18e3d;
+}
+.news-link:active h4 {
+  opacity: 0.6;
+}
+@media (min-width: 768px) {
+  .news-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .news-wrapper > div {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .blog-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .blog-box .panel-body {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+@media (min-width: 1150px) {
+  .news-wrapper > div {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
 .purse-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1706,6 +1847,17 @@ body.fixed-footer .footer {
   color: #fff;
   background: #f18e3d;
   opacity: 0.5;
+}
+.navbar-fixed-top .navbar-nav > li > a.active {
+  color: #f18e3d;
+}
+.navbar-fixed-top .navbar-nav > li > a.active:hover,
+.navbar-fixed-top .navbar-nav > li > a.active:focus,
+.navbar-fixed-top .navbar-nav > li > a.active:active {
+  color: #f18e3d;
+  background: #fff;
+  opacity: 1;
+  cursor: default;
 }
 .navbar-fixed-top .navbar-nav > li > a > span {
   display: inline-block;

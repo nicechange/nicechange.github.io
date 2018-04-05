@@ -1,0 +1,22 @@
+.faq-link {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+
+@media (min-width: @tablet-width) {
+  .faq-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    & > div {
+      width: 48%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
