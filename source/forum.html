@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Taketoken</title>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="js/app.js" as="script">
+    <link rel="preload" href="js/picturefill.js" as="script">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext"
+          rel="stylesheet">
+
+
+</head>
+<body class="landing-page">
+
+<div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+</div>
+
+<nav class="navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <a href="index.html" class="logo--header">
+                <img width="60" height="51" src="img/teketoken_logo_header.png" alt="logo TakeToken"/>
+            </a>
+
+            <button class="navbar-toggle collapsed" type="button">
+                <span>Открыть меню</span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapsed">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-link" href="faq.html">О сервисе</a></li>
+                <li><a class="navbar-link" href="interface.tour">Правила</a></li>
+                <li><a class="navbar-link active" href="forum.html">Форум</a></li>
+                <li><a class="navbar-link" href="news.html">Новости</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="navbar-link" href="register.html">
+                        <span>Зарегистрироваться</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-link" href="login.html" title="Войти">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-sign-in-alt"></use>
+                        </svg>
+                        <span>Войти</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-link" href="dealings.html" title="Личный кабинет">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-user-circle"></use>
+                        </svg>
+                        <span>User number one</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="login.login" title="Выйти">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-sign-out-alt"></use>
+                        </svg>
+                        <span>Выйти</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="page-top">
+    <div class="container">
+        <div class="heading">
+        </div>
+    </div>
+</header>
+
+<section>
+
+
+    <div class="container">
+
+        <div class="hpanel">
+            <div class="panel-body">
+                <h2 class="font-light m-b-xs">
+                    Форум
+                </h2>
+                <small>Topics board for forum page.</small>
+            </div>
+        </div>
+
+        <div class="hpanel">
+            <div class="panel-body forum-inner">
+                <div class="forum-inline">
+                    <span class="forum-search-label">Search topic: </span><input class="form-control" type="text">
+                </div>
+                <div class="text-muted small text-right">
+                    Proin eu tempus tortor, vitae bibendum est. Nam placerat hendrerit rhoncus<br/>
+                    Last modyfication by: <span class="font-bold">Mike Smith</span>
+                    21.03.2015, 06:45 pm
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="hpanel forum-box">
+
+            <div class="panel-heading">
+                <p>General topics</p>
+                <p>
+                    Last modification: 10.12.2015, 10:22 am
+                </p>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <div class="forum-inline">
+                        <span class="label label-success">Special</span>
+                        <a href="forum_details.html"><h4> General Discussion</h4></a>
+                    </div>
+                    <div class="desc">Suspendisse egestas risus quis sem ultricies venenatis. Phasellus maximus
+                        tortor ut augue accumsan, sed posuere dolor tincidunt. In hac habitasse platea dictumst.
+                    </div>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 4780 </p>
+                    <small>Views</small>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 150 </p>
+                    <small>Posts</small>
+                </div>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <a href="forum_details.html"><h4>Introductions</h4></a>
+                    <div class="desc">Mauris feugiat ante vitae euismod vestibulum. Suspendisse id ullamcorper odio,
+                        ut tristique ante. In scelerisque dolor in mi condimentum consequat.
+                    </div>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 260 </p>
+                    <small>Views</small>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 149 </p>
+                    <small>Posts</small>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hpanel forum-box">
+
+            <div class="panel-heading forum-inline">
+                <p>
+                    Nunc eu luctus neque.
+                </p>
+                <p>
+                    Last modification: 11.10.2015, 08:10 am
+                </p>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <div class="forum-inline">
+                        <span class="label label-warning">New</span>
+                        <a href="forum_details.html">
+                            <h4>Morbi aliquam aliquam</h4>
+                        </a>
+                    </div>
+                    <div class="desc">Morbi aliquam aliquam erat, id iaculis dui maximus vel. Curabitur dolor leo,
+                        tempus sit amet rutrum nec, luctus vel nisl. Nam sollicitudin quam non arcu faucibus, id
+                        mattis lacus interdum. Nam eleifend sodales ante sed pharetra. Integer cursus dapibus
+                        fringilla.
+                    </div>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 2451 </p>
+                    <small>Views</small>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 100 </p>
+                    <small>Posts</small>
+                </div>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <div class="forum-inline">
+                        <span class="label label-warning">New</span>
+                        <a href="forum_details.html"><h4>Quisque ultrices </h4></a>
+                    </div>
+                    <div class="desc">Vestibulum scelerisque semper ligula ac consectetur. Proin tincidunt dui ac
+                        quam mollis eleifend.
+                    </div>
+                </div>
+                <p class="forum-info">
+                    <span class="number"> 5699 </span>
+                    <small>Views</small>
+                </p>
+                <p class="forum-info">
+                    <span class="number"> 114 </span>
+                    <small>Posts</small>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="hpanel forum-box">
+
+            <div class="panel-heading forum-inline">
+                <p>
+                    Aenean vitae
+                </p>
+                <p class="pull-right">
+                    Last modification: 01.03.2015, 11:10 am
+                </p>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <a href="forum_details.html">
+                        <h4>Pellentesque rhoncus </h4>
+                    </a>
+                    <div class="desc">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                        turpis egestas.
+                    </div>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 1200 </p>
+                    <small>Views</small>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 457 </p>
+                    <small>Posts</small>
+                </div>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <a href="forum_details.html"><h4>Sed iaculis vel libero</h4></a>
+                    <div class="desc">Nam sollicitudin quam non arcu faucibus, id mattis lacus interdum. Nam
+                        eleifend sodales ante sed pharetra. Integer cursus dapibus fringilla. Maecenas volutpat
+                        dapibus vestibulum. Mauris ullamcorper nibh nec consectetur fermentum.
+                    </div>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 460 </p>
+                    <small>Views</small>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 280 </p>
+                    <small>Posts</small>
+                </div>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <p class="forum-inline">
+                        <span class="label label-info">Latest</span>
+                        <a href="forum_details.html"><h4>Mauris fermentum </h4></a>
+                    </p>
+                    <div class="desc">Aenean ornare lacus quis blandit posuere. Nulla porta lectus facilisis justo
+                        pharetra, nec varius felis sollicitudin.
+                    </div>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 870 </p>
+                    <small>Views</small>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 621 </p>
+                    <small>Posts</small>
+                </div>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <a href="forum_details.html"><h4>Vivamus non lacus diam.</h4></a>
+                    <div class="desc">Aenean quis nulla finibus, lobortis nunc sit amet, tempor ligula. Nunc
+                        pharetra, mauris aliquet mollis semper, libero eros mattis eros, sit amet semper elit libero
+                        in leo. In porttitor quam sit amet felis congue aliquam. Ut commodo aliquam consectetur. In
+                        hac habitasse platea dictumst.
+                    </div>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 278 </p>
+                    <small>Views</small>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 455 </p>
+                    <small>Posts</small>
+                </div>
+            </div>
+
+            <div class="panel-body forum-inline">
+                <div class="forum-heading">
+                    <a href="forum_details.html"><h4>Donec lacus dolor</h4></a>
+                    <div class="desc">Nullam ipsum diam, tempus at pretium id, posuere rutrum urna. Sed et eros
+                        vitae magna condimentum semper sed vel enim.
+                    </div>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 780 </p>
+                    <small>Views</small>
+                </div>
+                <div class="forum-info">
+                    <p class="number"> 120 </p>
+                    <small>Posts</small>
+                </div>
+            </div>
+
+            <div class="panel-body forum-inline">
+                    <div class="forum-heading">
+                        <a href="forum_details.html"><h4>Fusce sagittis</h4></a>
+                        <div class="desc">Duis sed enim velit. In auctor porta lorem, nec viverra risus faucibus at.
+                            Nulla sagittis eros id nibh vulputate, id malesuada nunc ultrices.
+                        </div>
+                    </div>
+                    <div class="forum-info">
+                        <p class="number"> 824 </p>
+                        <small>Views</small>
+                    </div>
+                    <div class="forum-info">
+                        <p class="number"> 266 </p>
+                        <small>Posts</small>
+                    </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <section class="footer--landing-page">
+        <div class="container">
+            <div class="logo--footer">
+                <img width="100" height="auto" src="img/teketoken_logo_footer.png" alt="logo TakeToken"/>
+            </div>
+            <ul class="nav nav-list">
+                <li class="nav-header">О проекте</li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Карьера</a></li>
+                <li><a href="#">Комиссия</a></li>
+                <li><a href="#">Вознаграждения за исследование безопасности</a></li>
+                <li><a href="#">Статистика</a></li>
+                <li><a href="#">Условия предоставления услуг</a></li>
+            </ul>
+            <ul class="nav nav-list">
+                <li class="nav-header">СЛУЖБА ПОДДЕРЖКИ</li>
+                <li><a href="#">Обратитесь в нашу службу поддержки</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Руководства</a></li>
+                <li><a href="#">Забыли пароль?</a></li>
+            </ul>
+            <ul class="nav nav-list">
+                <li class="nav-header">УСЛУГИ</li>
+                <li><a href="#">Документация по API</a></li>
+                <li><a href="#">Банкомат LocalBitcoins</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Обозреватель блоков</a></li>
+            </ul>
+            <ul class="nav nav-list">
+                <li class="nav-header">МЫ В&nbsp;СОЦСЕТЯХ</li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-facebook"></use>
+                    </svg>
+                    &nbsp;<span>Facebook</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-twitter"></use>
+                    </svg>
+                    &nbsp;<span>Twitter</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-instagram"></use>
+                    </svg>
+                    &nbsp;<span>Instagram</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-reddit-alien"></use>
+                    </svg>
+                    &nbsp;<span>Reddit</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-hashtag"></use>
+                    </svg>
+                    &nbsp;<span>IRC</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-rss"></use>
+                    </svg>
+                    &nbsp;<span>Блог</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-weibo"></use>
+                    </svg>
+                    &nbsp;<span>Китайский блог</span>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/picturefill.js"></script>
+
+</body>
+</html>

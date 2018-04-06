@@ -1319,6 +1319,141 @@ body.fixed-footer .footer {
     width: 48%;
   }
 }
+.forum-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.forum-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.forum-search-label {
+  -ms-flex-preferred-size: 160px;
+      flex-basis: 160px;
+}
+.forum-box.hpanel .panel-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 90%;
+  background: #f7f9fa;
+  padding: 10px 20px;
+  border: none;
+}
+.forum-box p {
+  margin: 0;
+}
+.forum-heading {
+  margin-right: auto;
+}
+.forum-box .forum-heading .label {
+  margin-right: 5px;
+}
+.forum-box a {
+  cursor: pointer;
+  color: #34495e;
+}
+.forum-box .forum-heading h4 {
+  margin-bottom: 3px;
+  font-weight: 600;
+  margin-top: 5px;
+  display: inline;
+}
+.forum-box .forum-heading .desc {
+  color: #909295;
+  font-size: 12px;
+}
+.forum-box .forum-info {
+  text-align: right;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.forum-box .forum-info .number {
+  display: block;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 5px;
+}
+.media {
+  margin-top: 15px;
+}
+.media:first-child {
+  margin-top: 0;
+}
+.media,
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+  width: 100%;
+}
+.forum-box .panel-body .media-image {
+  margin-right: 20px;
+  min-width: 100px;
+}
+.forum-box .panel-body .media img {
+  margin-top: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.forum-box .author-info {
+  font-size: 12px;
+}
+.forum-box .badges {
+  color: #ffb606;
+}
+.forum-box .forum-comments {
+  border: 1px solid #eaeaea;
+  border-left: none;
+  border-right: none;
+  background: #f7f9fa;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+.forum-box .forum-comments .media a {
+  width: 60px;
+}
+.forum-box .forum-comments .media img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.forum-box .forum-comments form {
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .forum-box .panel-body .media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .forum-box .panel-body .media-image {
+    text-align: center;
+  }
+}
 .news-box.hpanel > .panel-heading {
   background: #fff;
   border-radius: 2px;
@@ -1428,6 +1563,77 @@ body.fixed-footer .footer {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
   }
+}
+.content {
+  padding: 25px 40px 40px 40px;
+  min-width: 320px;
+}
+.content-boxed {
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 20px;
+}
+.blog-article-box.hpanel > .panel-heading {
+  background: #fff;
+  border-radius: 2px;
+  padding: 80px 10px;
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+}
+.blog-article-box .panel-heading h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #515355;
+}
+.blog-article-box.hpanel .panel-body {
+  padding: 50px 70px;
+}
+.blog-article-box .panel-body p {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 20px;
+  line-height: 32px;
+  color: #515355;
+}
+.pull-left {
+  float: left;
+}
+.blog-article-box p {
+  margin: 0 0 10px;
+}
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee;
+}
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  text-align: right;
+  border-right: 5px solid #eee;
+  border-left: 0;
+}
+.pull-right {
+  float: right;
+}
+.blog-article-box.hpanel > .panel-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #909295;
+}
+.blog-article-box .panel-footer p {
+  margin: 0;
 }
 .purse-header {
   display: -webkit-box;

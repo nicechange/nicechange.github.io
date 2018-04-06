@@ -1,0 +1,79 @@
+.media {
+  margin-top: 15px;
+}
+
+.media:first-child {
+  margin-top: 0;
+}
+
+.media, .media-body {
+  overflow: hidden;
+  zoom: 1;
+  width: 100%;
+}
+
+.forum-box .panel-body .media {
+  //display: flex;
+  //justify-content: space-between;
+}
+
+.forum-box .panel-body .media-image {
+  margin-right: 20px;
+  min-width: 100px;
+}
+
+.forum-box .panel-body .media img {
+  margin-top: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.forum-box .author-info {
+  font-size: 12px;
+}
+
+.forum-box .badges {
+  color: @color-yellow;
+}
+
+.forum-box .forum-comments {
+  border: 1px solid #eaeaea;
+  border-left: none;
+  border-right: none;
+  background: #f7f9fa;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+
+.forum-box .forum-comments .media a {
+  width: 60px;
+}
+
+.forum-box .forum-comments .media img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.forum-box .forum-comments form {
+  margin-top: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .forum-box .panel-body .media {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .forum-box .panel-body .media-image {
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}

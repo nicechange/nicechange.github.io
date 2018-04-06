@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Taketoken</title>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="js/app.js" as="script">
+    <link rel="preload" href="js/picturefill.js" as="script">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext"
+          rel="stylesheet">
+
+
+</head>
+<body class="landing-page">
+
+<div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+</div>
+
+<nav class="navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <a href="index.html" class="logo--header">
+                <img width="60" height="51" src="img/teketoken_logo_header.png" alt="logo TakeToken"/>
+            </a>
+
+            <button class="navbar-toggle collapsed" type="button">
+                <span>Открыть меню</span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapsed">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-link" href="faq.html">О сервисе</a></li>
+                <li><a class="navbar-link" href="interface.tour">Правила</a></li>
+                <li><a class="navbar-link" href="forum.html">Форум</a></li>
+                <li><a class="navbar-link" href="news.html">Новости</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="navbar-link" href="register.html">
+                        <span>Зарегистрироваться</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-link" href="login.html" title="Войти">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-sign-in-alt"></use>
+                        </svg>
+                        <span>Войти</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-link" href="dealings.html" title="Личный кабинет">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-user-circle"></use>
+                        </svg>
+                        <span>User number one</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="login.login" title="Выйти">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-sign-out-alt"></use>
+                        </svg>
+                        <span>Выйти</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="page-top">
+    <div class="container">
+        <div class="heading">
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+
+        <div class="hpanel">
+            <div class="panel-body">
+                <h2 class="font-light m-b-xs">
+                    Topic
+                </h2>
+                <small>Topic for forum page.</small>
+            </div>
+        </div>
+
+        <div class="hpanel forum-box">
+
+            <div class="panel-heading">
+                <p>
+                    General topics > Announcements > <span class="text-success">Free talks</span>
+                </p>
+                <p>
+                    Last modification: 10.12.2015, 10:22 am
+                </p>
+            </div>
+
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-image">
+                        <img src="img/a4.jpg" alt="profile-picture">
+                        <div class="author-info">
+                            <strong>Anna Smith</strong><br>
+                            April 11.2015
+                            <div class="badges">
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h5>Vivamus luctus diam et magna</h5>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look
+                        even slightly believable.
+                        Ut mollis mauris in quam scelerisque, nec euismod nulla rutrum. Vestibulum elementum porta pharetra. Praesent volutpat, mi sed laoreet facilisis, turpis erat ornare orci, a
+                        faucibus sapien eros quis nibh.
+                        <br/>
+                        <br/>
+                        Praesent tempus nunc in libero lacinia, nec auctor arcu commodo. Sed sagittis interdum varius. Cras quis ex dictum, laoreet enim quis, aliquam
+                        odio. Nunc ac risus ex. Nunc tempor a ex nec malesuada. Suspendisse efficitur varius mollis.
+                        <br/>
+                        <br/>
+                        Mauris tellus eros, faucibus vel fringilla sit amet, volutpat commodo erat. Nam fermentum tellus facilisis consectetur varius. Mauris et molestie leo. Cras mattis pellentesque massa, convallis accumsan dui sagittis vel.
+                        <br/>
+                        <br/>
+                        <i>
+                            - Best regards, Anna Smith
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-image pull-left">
+                        <img src="img/a2.jpg" alt="profile-picture">
+                        <div class="author-info">
+                            <strong>Robert Jackson</strong><br>
+                            May 01.2015
+                            <div class="badges">
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h5>Nam fermentum tellus</h5>
+                        Vivamus luctus diam et magna bibendum, quis tristique urna cursus. In dignissim tellus eu metus pharetra vulputate. Proin eu tempus tortor, vitae bibendum est. Nam placerat hendrerit rhoncus. Ut finibus, orci ut euismod gravida, felis elit lobortis purus, eget bibendum tortor sapien sit amet turpis. Integer porttitor ligula ac felis imperdiet volutpat. Praesent sit amet libero id eros convallis fringilla tempus vitae est.
+                        <br/>
+                        <br/>
+                        Sed venenatis dui non blandit semper. Proin sed ullamcorper arcu, et ullamcorper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam vitae efficitur urna. Integer vitae mi commodo, porttitor nulla vitae, sollicitudin eros.
+                        <br/>
+                        <br/>
+                        <i>
+                            - Best regards, Robert Jackson
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-image pull-left">
+                        <img src="img/a1.jpg" alt="profile-picture">
+                        <div class="author-info">
+                            <strong>Mark Smith</strong><br>
+                            May 01.2015
+                            <div class="badges">
+                                <i class="fa fa-shield text-success"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h5>Aenean molestie lorem ut sem</h5>
+                        Nam fermentum tellus facilisis consectetur varius. Mauris et molestie leo. Cras mattis pellentesque massa, convallis accumsan dui sagittis vel. Ut mollis mauris in quam scelerisque, nec euismod nulla rutrum. Vestibulum elementum porta pharetra. Praesent volutpat, mi sed laoreet facilisis, turpis erat ornare orci, a faucibus sapien eros quis nibh. Praesent tempus nunc in libero lacinia, nec auctor arcu commodo. Sed sagittis interdum varius. Cras quis ex dictum, laoreet enim quis, aliquam odio. Nunc ac risus ex. Nunc tempor a ex nec malesuada. Suspendisse efficitur varius mollis.
+                        <br/>
+                        <br/>
+                        Sed venenatis dui non blandit semper. Proin sed ullamcorper arcu, et ullamcorper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam vitae efficitur urna. Integer vitae mi commodo, porttitor nulla vitae, sollicitudin eros.
+                        <br/>
+                        <br/>
+                        <i>
+                            - Best regards, Mark Smith
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-image pull-left">
+                        <img src="img/a6.jpg" alt="profile-picture">
+                        <div class="author-info">
+                            <strong>John Jackson</strong><br>
+                            Oct 21.2015
+                            <div class="badges">
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h5>Fusce tristique massa turpis</h5>
+                        Sed venenatis dui non blandit semper. Proin sed ullamcorper arcu, et ullamcorper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam vitae efficitur urna. Integer vitae mi commodo, porttitor nulla vitae, sollicitudin eros.
+                        <br/>
+                        <br/>
+                        Proin eu tempus tortor, vitae bibendum est. Nam placerat hendrerit rhoncus. Ut finibus, orci ut euismod gravida, felis elit lobortis purus, eget bibendum tortor sapien sit amet turpis. Integer porttitor ligula ac felis imperdiet volutpat. Praesent sit amet libero id eros convallis fringilla tempus vitae est.
+                        <br/>
+                        <br/>
+                        Quisque gravida maximus rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget felis dictum, aliquam nunc vitae, pharetra dolor. Aenean sapien erat, molestie sit amet faucibus non, pharetra a dui. Aenean ut venenatis dolor, et volutpat odio. Nam ultrices gravida ligula sed porta.
+                        <br/>
+                        <br/>
+                        <i>
+                            - Best regards, John Jackson
+                        </i>
+
+                        <!-- Comments -->
+                        <div class="forum-comments">
+                            <div class="media">
+                                <a>
+                                    <img src="img/a1.jpg" alt="profile-picture">
+                                </a>
+
+                                <div class="media-body">
+                                    <span class="font-bold">John Novak</span>
+                                    <small class="text-muted">21.03.2015</small>
+
+                                    <div class="social-content">
+                                        Injected humour, or randomised words which don't look even slightly believable.
+                                        Proin eu tempus tortor, vitae bibendum est. Nam placerat hendrerit rhoncus.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a>
+                                    <img src="img/a3.jpg" alt="profile-picture">
+                                </a>
+
+                                <div class="media-body">
+                                    <span class="font-bold">Mark Smith</span>
+                                    <small class="text-muted">14.04.2015</small>
+                                    <div class="social-content">
+                                        Many desktop publishing packages and web page editors.Morbi imperdiet sem non dignissim vulputate.
+                                        Cras maximus porttitor dui sed placerat. Integer eleifend pulvinar arcu at mattis. Ut porta tellus id enim volutpat, non pharetra elit vestibulum.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a>
+                                    <img src="img/a9.jpg" alt="profile-picture">
+                                </a>
+
+                                <div class="media-body">
+                                    <span class="font-bold">John Smith</span>
+                                    <small class="text-muted">22.11.2015</small>
+                                    <div class="social-content">
+                                        Nunc egestas eu odio ut pellentesque. Fusce sagittis quam et lobortis scelerisque. Nulla in libero lacinia, fringilla magna in, congue diam. Vivamus fermentum eget erat hendrerit mattis. Nulla facilisi.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form>
+                                <input class="form-control" placeholder="Your comment">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-image pull-left">
+                        <img src="img/a2.jpg" alt="profile-picture">
+                        <div class="author-info">
+                            <strong>Robert Jackson</strong><br>
+                            May 01.2015
+                            <div class="badges">
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h5>Nam fermentum tellus</h5>
+                        Vivamus luctus diam et magna bibendum, quis tristique urna cursus. In dignissim tellus eu metus pharetra vulputate. Proin eu tempus tortor, vitae bibendum est. Nam placerat hendrerit rhoncus. Ut finibus, orci ut euismod gravida, felis elit lobortis purus, eget bibendum tortor sapien sit amet turpis. Integer porttitor ligula ac felis imperdiet volutpat. Praesent sit amet libero id eros convallis fringilla tempus vitae est.
+                        <br/>
+                        <br/>
+                        Sed venenatis dui non blandit semper. Proin sed ullamcorper arcu, et ullamcorper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam vitae efficitur urna. Integer vitae mi commodo, porttitor nulla vitae, sollicitudin eros.
+                        <br/>
+                        <br/>
+                        <i>
+                            - Best regards, Robert Jackson
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-image pull-left">
+                        <img src="img/a4.jpg" alt="profile-picture">
+                        <div class="author-info">
+                            <strong>Anna Smith</strong><br>
+                            April 11.2015
+                            <div class="badges">
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h5>Vivamus luctus diam et magna</h5>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look
+                        even slightly believable.
+                        Ut mollis mauris in quam scelerisque, nec euismod nulla rutrum. Vestibulum elementum porta pharetra. Praesent volutpat, mi sed laoreet facilisis, turpis erat ornare orci, a
+                        faucibus sapien eros quis nibh.
+                        <br/>
+                        <br/>
+                        Praesent tempus nunc in libero lacinia, nec auctor arcu commodo. Sed sagittis interdum varius. Cras quis ex dictum, laoreet enim quis, aliquam
+                        odio. Nunc ac risus ex. Nunc tempor a ex nec malesuada. Suspendisse efficitur varius mollis.
+                        <br/>
+                        <br/>
+                        Mauris tellus eros, faucibus vel fringilla sit amet, volutpat commodo erat. Nam fermentum tellus facilisis consectetur varius. Mauris et molestie leo. Cras mattis pellentesque massa, convallis accumsan dui sagittis vel.
+                        <br/>
+                        <br/>
+                        <i>
+                            - Best regards, Anna Smith
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-image pull-left">
+                        <img src="img/a6.jpg" alt="profile-picture">
+                        <div class="author-info">
+                            <strong>John Jackson</strong><br>
+                            Oct 21.2015
+                            <div class="badges">
+                                <svg class="" width="18" height="18">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <h5>Fusce tristique massa turpis</h5>
+                        Sed venenatis dui non blandit semper. Proin sed ullamcorper arcu, et ullamcorper mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam vitae efficitur urna. Integer vitae mi commodo, porttitor nulla vitae, sollicitudin eros.
+                        <br/>
+                        <br/>
+                        Proin eu tempus tortor, vitae bibendum est. Nam placerat hendrerit rhoncus. Ut finibus, orci ut euismod gravida, felis elit lobortis purus, eget bibendum tortor sapien sit amet turpis. Integer porttitor ligula ac felis imperdiet volutpat. Praesent sit amet libero id eros convallis fringilla tempus vitae est.
+                        <br/>
+                        <br/>
+                        Quisque gravida maximus rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget felis dictum, aliquam nunc vitae, pharetra dolor. Aenean sapien erat, molestie sit amet faucibus non, pharetra a dui. Aenean ut venenatis dolor, et volutpat odio. Nam ultrices gravida ligula sed porta.
+                        <br/>
+                        <br/>
+                        <i>
+                            - Best regards, John Jackson
+                        </i>
+
+                        <!-- Comments -->
+                        <div class="forum-comments">
+                            <div class="media">
+                                <a>
+                                    <img src="img/a1.jpg" alt="profile-picture">
+                                </a>
+
+                                <div class="media-body">
+                                    <span class="font-bold">John Novak</span>
+                                    <small class="text-muted">21.03.2015</small>
+
+                                    <div class="social-content">
+                                        Injected humour, or randomised words which don't look even slightly believable.
+                                        Proin eu tempus tortor, vitae bibendum est. Nam placerat hendrerit rhoncus.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a>
+                                    <img src="img/a3.jpg" alt="profile-picture">
+                                </a>
+
+                                <div class="media-body">
+                                    <span class="font-bold">Mark Smith</span>
+                                    <small class="text-muted">14.04.2015</small>
+                                    <div class="social-content">
+                                        Many desktop publishing packages and web page editors.Morbi imperdiet sem non dignissim vulputate.
+                                        Cras maximus porttitor dui sed placerat. Integer eleifend pulvinar arcu at mattis. Ut porta tellus id enim volutpat, non pharetra elit vestibulum.
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <input class="form-control" placeholder="Your comment">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <section class="footer--landing-page">
+        <div class="container">
+            <div class="logo--footer">
+                <img width="100" height="auto" src="img/teketoken_logo_footer.png" alt="logo TakeToken"/>
+            </div>
+            <ul class="nav nav-list">
+                <li class="nav-header">О проекте</li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Карьера</a></li>
+                <li><a href="#">Комиссия</a></li>
+                <li><a href="#">Вознаграждения за исследование безопасности</a></li>
+                <li><a href="#">Статистика</a></li>
+                <li><a href="#">Условия предоставления услуг</a></li>
+            </ul>
+            <ul class="nav nav-list">
+                <li class="nav-header">СЛУЖБА ПОДДЕРЖКИ</li>
+                <li><a href="#">Обратитесь в нашу службу поддержки</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Руководства</a></li>
+                <li><a href="#">Забыли пароль?</a></li>
+            </ul>
+            <ul class="nav nav-list">
+                <li class="nav-header">УСЛУГИ</li>
+                <li><a href="#">Документация по API</a></li>
+                <li><a href="#">Банкомат LocalBitcoins</a></li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Обозреватель блоков</a></li>
+            </ul>
+            <ul class="nav nav-list">
+                <li class="nav-header">МЫ В&nbsp;СОЦСЕТЯХ</li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-facebook"></use>
+                    </svg>
+                    &nbsp;<span>Facebook</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-twitter"></use>
+                    </svg>
+                    &nbsp;<span>Twitter</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-instagram"></use>
+                    </svg>
+                    &nbsp;<span>Instagram</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-reddit-alien"></use>
+                    </svg>
+                    &nbsp;<span>Reddit</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-hashtag"></use>
+                    </svg>
+                    &nbsp;<span>IRC</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-rss"></use>
+                    </svg>
+                    &nbsp;<span>Блог</span>
+                </a></li>
+                <li><a href="#">
+                    <svg class="" width="18" height="18">
+                        <use xlink:href="#sprite-weibo"></use>
+                    </svg>
+                    &nbsp;<span>Китайский блог</span>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/picturefill.js"></script>
+
+</body>
+</html>
