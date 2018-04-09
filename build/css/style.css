@@ -1672,9 +1672,23 @@ blockquote.pull-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.purse-header p {
+  margin: 0;
+}
+.purse-header svg {
+  vertical-align: middle;
+  height: 27px;
+  width: auto;
+}
+.purse-header span {
+  vertical-align: middle;
 }
 @media (min-width: 768px) {
   .purses {

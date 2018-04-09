@@ -146,7 +146,14 @@
                     <div class="hpanel hyellow purse">
                         <div class="panel-heading hbuilt">
                             <h4 class="purse-header">
-                                <span>Кошелек</span>
+                                <p>
+                                    <svg class="" width="18" height="18">
+                                        <use xlink:href="#sprite-btc"></use>
+                                    </svg>
+                                    <span>
+                                        Bitcoin
+                                    </span>
+                                </p>
                                 <button class="purse-remove" title="Удалить">Удалить</button>
                             </h4>
                         </div>
@@ -156,10 +163,7 @@
                                     <thead>
                                     <tr>
                                         <th>
-                                            <span>Адрес</span>
-                                        </th>
-                                        <th class="text-center">
-                                            <span>Валюта</span>
+                                            <span>Адрес кошелька</span>
                                         </th>
                                         <th class="text-center" nowrap>
                                             <span>Баланс</span>
@@ -169,17 +173,7 @@
                                     <tbody>
                                     <tr>
                                         <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
-                                        <td class="text-center">
-                                            ВТС
-                                        </td>
                                         <td class="text-center" nowrap>0.00000000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>0xca30e63200a0fe3182dc61fc5605efc41456f32</td>
-                                        <td class="text-center">
-                                            ETH
-                                        </td>
-                                        <td class="text-center">0.00000000</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -194,7 +188,14 @@
                     <div class="hpanel hyellow purse">
                         <div class="panel-heading hbuilt">
                             <h4 class="purse-header">
-                                <span>Кошелек</span>
+                                <p>
+                                    <svg class="" width="18" height="18">
+                                        <use xlink:href="#sprite-ethereum"></use>
+                                    </svg>
+                                    <span>
+                                        Ethereum
+                                    </span>
+                                </p>
                                 <button class="purse-remove" title="Удалить">Удалить</button>
                             </h4>
                         </div>
@@ -204,10 +205,7 @@
                                     <thead>
                                     <tr>
                                         <th>
-                                            <span>Адрес</span>
-                                        </th>
-                                        <th class="text-center">
-                                            <span>Валюта</span>
+                                            <span>Адрес кошелька</span>
                                         </th>
                                         <th class="text-center" nowrap>
                                             <span>Баланс</span>
@@ -216,17 +214,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
-                                        <td class="text-center">
-                                            ВТС
-                                        </td>
-                                        <td class="text-center" nowrap>0.00000000</td>
-                                    </tr>
-                                    <tr>
                                         <td>0xca30e63200a0fe3182dc61fc5605efc41456f32</td>
-                                        <td class="text-center">
-                                            ETH
-                                        </td>
                                         <td class="text-center">0.00000000</td>
                                     </tr>
                                     </tbody>
@@ -234,16 +222,6 @@
                             </div>
 
                             <form class="purse-transfer-form" method="post" action="../purse-transfer/">
-                                <div class="form-group m-b-xl">
-                                    <label class="control-labelm-r" for="type-of-crypt-for-translation">
-                                        Вид крипты для перевода:
-                                    </label>
-                                    <select class="form-control m-r" name="buying-btc-get"
-                                            id="type-of-crypt-for-translation">
-                                        <option value="Bitcoin">Bitcoin</option>
-                                        <option value="Etherium">Etherium</option>
-                                    </select>
-                                </div>
                                 <div class="form-group m-b-xl">
                                     <label for="id_quantity">Количество монет:</label>
                                     <input type="number"
@@ -285,7 +263,8 @@
 
                 <div class="hpanel">
                     <div class="panel-body text-center">
-                        <button class="btn btn-primary" type="submit">Создать новый кошелек</button>
+                        <button class="btn btn-primary" type="submit">Создать новый кошелек BTC</button>
+                        <button class="btn btn-primary" type="submit">Создать новый кошелек ETH</button>
                     </div>
                 </div>
 
