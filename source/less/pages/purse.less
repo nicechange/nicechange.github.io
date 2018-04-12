@@ -18,6 +18,35 @@
   }
 }
 
+.purses {
+  td, th {
+    vertical-align: top;
+  }
+
+  td, th {
+    width: calc(~'100% - 95px');
+  }
+
+  td:nth-last-of-type(1), th:nth-last-of-type(1) {
+    width: 95px;
+  }
+}
+
+
+.purse-info {
+
+  svg {
+    vertical-align: bottom;
+  }
+
+  &:hover:after {
+    display: flex;
+    content: 'Для получения токенов скопируйте и перешлите адрес кошелька отправителю.';
+    margin-top: 10px;
+    color: @color-blue;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .purses {
     display: flex;
@@ -27,9 +56,35 @@
 
   .purse {
     flex-basis: 49%;
+    flex-grow: 1;
+  }
+
+  .purse-table {
+    display: flex;
+    max-width: 100%;
+
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul:not(:nth-last-of-type(1)) {
+      margin-right: 10px;
+    }
+
+    li {
+      list-style: none;
+      padding: 5px;
+    }
+
+    li:first-child {
+      font-weight: 600;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-
+  .purse {
+    flex-grow: 0;
+  }
 }

@@ -1690,6 +1690,29 @@ blockquote.pull-right {
 .purse-header span {
   vertical-align: middle;
 }
+.purses td,
+.purses th {
+  vertical-align: top;
+}
+.purses td,
+.purses th {
+  width: calc(100% - 95px);
+}
+.purses td:nth-last-of-type(1),
+.purses th:nth-last-of-type(1) {
+  width: 95px;
+}
+.purse-info svg {
+  vertical-align: bottom;
+}
+.purse-info:hover:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: 'Для получения токенов скопируйте и перешлите адрес кошелька отправителю.';
+  margin-top: 10px;
+  color: #339ad6;
+}
 @media (min-width: 768px) {
   .purses {
     display: -webkit-box;
@@ -1704,6 +1727,36 @@ blockquote.pull-right {
   .purse {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .purse-table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+  }
+  .purse-table ul {
+    padding: 0;
+    margin: 0;
+  }
+  .purse-table ul:not(:nth-last-of-type(1)) {
+    margin-right: 10px;
+  }
+  .purse-table li {
+    list-style: none;
+    padding: 5px;
+  }
+  .purse-table li:first-child {
+    font-weight: 600;
+  }
+}
+@media (min-width: 1150px) {
+  .purse {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
   }
 }
 .profile-content form {
