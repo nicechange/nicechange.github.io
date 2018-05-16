@@ -1,64 +1,16 @@
-.inner-page-header {
-  width: 100%;
-  position: fixed;
-  height: 55px;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  box-shadow: 0 1px 10px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.1);
-  z-index: 10;
-
-  .container {
-    display: flex;
-  }
+.navbar--fixed-top ~ header {
+  height: 200px;
+  margin-top: 50px;
+  padding-top: 50px;
+  background-image: none;
+  background-color: #339ad6;
+  margin-bottom: -156px;
 }
 
-nav {
-  display: flex;
-  width: 100%;
-}
-
-.navbar-right {
-  margin-left: auto;
-}
-
-.navbar-nav {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-nav > li {
-  display: block;
-  margin: 0;
-  padding: 0;
-  height: 56px;
-  list-style: none;
-}
-
-.nav.navbar-nav > li > a {
-  position: relative;
-  display: block;
-  height: 56px;
-  padding: 15px 20px;
-  font-size: 25px;
-  line-height: 20px;
-  color: #9d9fa2;
-}
-
-.navbar-nav > li > a > span {
-  display: none;
-}
-
-
-@media (min-width: @tablet-width) {
-  .navbar-nav > li > a > span {
-    display: inline-block;
-    font-size: 20px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-  }
+.header--login,
+.header--register {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }

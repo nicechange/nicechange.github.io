@@ -1,5 +1,3 @@
-
-
 .content {
   padding: 25px 40px 40px 40px;
   min-width: 320px;
@@ -14,7 +12,7 @@
 .blog-article-box.hpanel > .panel-heading {
   background: #fff;
   border-radius: 2px;
-  padding: 80px 10px;
+  padding: 40px 10px;
   position: relative;
   font-weight: 500;
   text-align: center;
@@ -28,13 +26,12 @@
 }
 
 .blog-article-box.hpanel .panel-body {
-  padding: 50px 70px;
+  padding: 20px 10px;
 }
 
 .blog-article-box .panel-body p {
-  font-family: "Times New Roman",Georgia,Serif;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 15px;
+  line-height: 18px;
   color: #515355;
 }
 
@@ -79,7 +76,18 @@ blockquote {
 }
 
 @media (min-width: @tablet-width) {
+  .blog-article-box.hpanel > .panel-heading {
+    padding: 80px 10px;
+  }
 
+  .blog-article-box.hpanel .panel-body {
+    padding: 50px 70px;
+  }
+
+  .blog-article-box .panel-body p {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 @media (min-width: @desktop-width) {

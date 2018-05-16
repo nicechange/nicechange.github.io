@@ -1,0 +1,32 @@
+.why-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-list__item {
+  width: 100%;
+
+  h5 {
+    font-weight: bold;
+  }
+
+  p {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .why-list {
+    flex-direction: row;
+  }
+
+  .why-list__item {
+    width: 30%;
+  }
+}

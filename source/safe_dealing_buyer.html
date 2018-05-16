@@ -9,98 +9,103 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="js/app.js" as="script">
-    <link rel="preload" href="js/picturefill.js" as="script">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext"
-          rel="stylesheet">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanssemibold.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensansextrabold.woff2" as="font">
 </head>
-<body class="inner-page-body">
+<body class="inner-page__body">
 
 <div style="display:none">
     <include src="build/img/sprite.svg"></include>
 </div>
 
-<header class="inner-page-header">
-    <div class="logo--header">
-        <a href="index.html" class="">
+<nav class="navbar navbar--fixed-top navbar--inner">
+    <div class="container container--flex">
+        <a href="index.html" class="logo logo--header">
             <img width="60" height="51" src="img/teketoken_logo_header.png" alt="logo TakeToken">
         </a>
-    </div>
-    <nav>
-        <div class="navbar-right">
-            <ul class="nav navbar-nav no-borders">
-
+        <div class="navbar--right">
+            <ul class="navbar-nav с">
                 <li>
                     <a href="profile.html">
-                        <svg class="" width="24" height="24">
+                        <svg class="" width="18" height="18">
                             <use xlink:href="#sprite-user-circle"></use>
                         </svg>
-                        <span class="text-muted">User number one</span>
+                        <span>User number one</span>
                     </a>
                 </li>
                 <li>
                     <a href="login.html" title="Разлогиниться">
-                        <svg class="" width="24" height="24">
+                        <svg class="" width="18" height="18">
                             <use xlink:href="#sprite-sign-out-alt"></use>
                         </svg>
+                        <span>Выйти</span>
                     </a>
                 </li>
             </ul>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>
 
 <main class="inner-page">
 
-    <div class="inner-page-navigation" id="navigation">
+    <div class="inner-page__navigation navigation">
 
-        <div class="profile-picture">
-            <a href="index.html">
-                <img src="img/profile.jpg" class="img-circle m-b" alt="logo">
+        <div class="stats">
+            <a href="index.html" class="stats__img">
+                <img src="img/profile.jpg" alt="Profile photo">
             </a>
 
-            <div class="stats-label text-color">
-                <span class="font-extra-bold font-uppercase">Robert Razer</span>
-                <small class="text-muted">Пользователь</small>
-                <div>
-                    <div class="m-t-md m-b-xs">
-                        <svg class="" width="20" height="20">
-                            <use xlink:href="#sprite-star-full"></use>
-                        </svg>
-                        <svg class="" width="20" height="20">
-                            <use xlink:href="#sprite-star-full"></use>
-                        </svg>
-                        <svg class="" width="20" height="20">
-                            <use xlink:href="#sprite-star-full"></use>
-                        </svg>
-                        <svg class="" width="20" height="20">
-                            <use xlink:href="#sprite-star-full"></use>
-                        </svg>
-                        <svg class="" width="20" height="20">
-                            <use xlink:href="#sprite-star"></use>
-                        </svg>
-                    </div>
-                    <small class="text-muted">Рейтинг: 4</small>
+            <div class="stats__wrapper">
+                <span>Robert Razer</span>
+                <small>Пользователь</small>
+                <div class="stats__rating">
+                    <ul>
+                        <li>
+                            <svg width="20" height="20">
+                                <use xlink:href="#sprite-star-full"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg width="20" height="20">
+                                <use xlink:href="#sprite-star-full"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg width="20" height="20">
+                                <use xlink:href="#sprite-star-full"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg width="20" height="20">
+                                <use xlink:href="#sprite-star-full"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg width="20" height="20">
+                                <use xlink:href="#sprite-star"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                    <small>Рейтинг: 4</small>
                 </div>
-                <div>
-                    <h4 class="font-extra-bold m-b-xs">
-                        $260 104,200
-                    </h4>
-                    <small class="text-muted">Прибыль за последний период</small>
+                <div class="stats__profit">
+                    <p>$260 104,200</p>
+                    <small>Прибыль за последний период</small>
                 </div>
             </div>
         </div>
 
-        <ul class="nav-buttons">
-            <button class="btn btn-primary button-nav button-open">Отрыть меню</button>
-            <button class="btn btn-primary button-nav button-close">Закрыть меню</button>
-        </ul>
+        <button class="navigation__toggle navigation__toggle--collapsed"></button>
 
-        <ul class="nav" id="side-menu">
+        <ul>
             <li>
-                <a href="index.html"> <span class="nav-label">Вернуться на главную</span></a>
+                <a href="index.html"><span>Вернуться на главную</span></a>
             </li>
             <li>
-                <a href="dealings.html"> <span class="nav-label">Сделки</span></a>
+                <a href="dealings.html"><span>Сделки</span></a>
             </li>
             <li>
                 <a href="purse.html">
@@ -109,14 +114,14 @@
                     </svg>
                     <span class="nav-label">Кошельки</span></a>
             </li>
-            <li>
-                <a href="#">
-                    <span class="nav-label">Настройки</span>
+            <li class="second-level">
+                <a href="#" class="second-level__link second-level__link--opened">
+                    <span>Настройки</span>
                     <svg class="" width="14" height="14">
                         <use xlink:href="#sprite-chevron-left"></use>
                     </svg>
                 </a>
-                <ul class="nav nav-second-level">
+                <ul class="second-level__list second-level__list--opened">
                     <li><a href="rates.html">Курса валют</a></li>
                     <li><a href="profile.html">Профиля</a></li>
                     <li><a href="alerts.html">Оповещений</a></li>
@@ -125,117 +130,111 @@
         </ul>
     </div>
 
-    <!-- Main Wrapper -->
-    <div class="content-page">
-        <div id="wrapper">
-            <div class="normalheader transition">
-                <div class="hpanel">
-                    <div class="panel-body">
-                        <h2 class="font-light m-b-xs">
-                            Безопасная сделка (Покупатель)
-                        </h2>
-                        <small>Show user data in clear profile design</small>
-                    </div>
+    <div class="inner-page__content">
+        <div class="inner-page__header">
+            <div class="hpanel">
+                <div class="panel-body">
+                    <h2>
+                        Безопасная сделка (Покупатель)
+                    </h2>
+                    <small>Show user data in clear profile design</small>
                 </div>
             </div>
+        </div>
 
-            <div class="content">
+        <div class="content">
 
-                <div class="hpanel">
-                    <div class="panel-body">
+            <div class="hpanel">
+                <div class="panel-body">
 
-                        <div class="panel-heading m-b-md">
-                            <h4 class="text-primary-2">
-                                Выберите кошелек для совершения сделки
-                            </h4>
-                        </div>
+                    <div class="panel-heading m-b-md">
+                        <h4 class="text-primary-2">
+                            Выберите кошелек для совершения сделки
+                        </h4>
+                    </div>
 
-                        <div class="table-responsive m-b-xl">
-                            <table class="table table-condensed table-striped table-hover">
-                                <thead>
-                                <tr>
-                                    <th nowrap>
-                                        <span>Адрес кошелька</span>
-                                        <a class="sort-indicator">Сортировать</a>
-                                    </th>
-                                    <th nowrap>
-                                        <span>Баланс</span>
-                                        <a class="sort-indicator sort-up">Сортировать</a>
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td nowrap>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
-                                    <td nowrap>0.00000000</td>
-                                    <td class="text-right" nowrap>
-                                        <a class="btn btn-primary" href="#">
-                                            Выбрать
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
-                                    <td>0.00000000</td>
-                                    <td class="text-right">
-                                        <a class="btn btn-primary" href="#">
-                                            Выбрать
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
-                                    <td>0.00000000</td>
-                                    <td class="text-right">
-                                        <a class="btn btn-primary" href="#">
-                                            Выбрать
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
-                                    <td>0.00000000</td>
-                                    <td class="text-right">
-                                        <a class="btn btn-primary" href="#">
-                                            Выбрать
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
-                                    <td>0.00000000</td>
-                                    <td class="text-right">
-                                        <a class="btn btn-primary" href="#">
-                                            Выбрать
-                                        </a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="table-responsive m-b-xl">
+                        <table class="table table-condensed table-striped table-hover">
+                            <thead>
+                            <tr>
+                                <th nowrap>
+                                    <span>Адрес кошелька</span>
+                                    <a class="sort-indicator">Сортировать</a>
+                                </th>
+                                <th nowrap>
+                                    <span>Баланс</span>
+                                    <a class="sort-indicator sort-up">Сортировать</a>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td nowrap>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                <td nowrap>0.00000000</td>
+                                <td class="text-right" nowrap>
+                                    <a class="btn btn-primary" href="#">
+                                        Выбрать
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                <td>0.00000000</td>
+                                <td class="text-right">
+                                    <a class="btn btn-primary" href="#">
+                                        Выбрать
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                <td>0.00000000</td>
+                                <td class="text-right">
+                                    <a class="btn btn-primary" href="#">
+                                        Выбрать
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                <td>0.00000000</td>
+                                <td class="text-right">
+                                    <a class="btn btn-primary" href="#">
+                                        Выбрать
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</td>
+                                <td>0.00000000</td>
+                                <td class="text-right">
+                                    <a class="btn btn-primary" href="#">
+                                        Выбрать
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                        <div class="text-primary-2 text-bold m-b-xl">
-                            <p>Выбранный кошелек для поступлений:
+                    <div class="text-primary-2 text-bold m-b-xl">
+                        <p>Выбранный кошелек для поступлений:
                             <span class="text-muted text-overflow">
                                 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
                             </span>
-                        </div>
-                        <div class="panel-footer text-center m-b">
-                            <button type="submit" class="btn btn-primary m-b m-r m-l">Отправить фиат</button>
-                            <button class="btn btn-default m-b">Отменить</button>
-                        </div>
+                    </div>
+                    <div class="panel-footer text-center m-b">
+                        <button type="submit" class="btn btn-primary m-b m-r m-l">Отправить фиат</button>
+                        <button class="btn btn-default m-b">Отменить</button>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
 
 </main>
 
-<footer class="footer">
-    <!-- Footer -->
+<footer class="footer footer--inner-page">
     <p>
         Example text
     </p>
@@ -246,7 +245,6 @@
 
 
 <script src="js/app.js"></script>
-<script src="js/picturefill.js"></script>
 
 </body>
 </html>

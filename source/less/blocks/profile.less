@@ -1,0 +1,41 @@
+.profile-content form{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile-form .form__group {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 40px;
+  padding-top: 15px;
+}
+
+.profile-form .form__group:nth-of-type(4) {
+  border-bottom: none;
+}
+
+@media (min-width: @tablet-width) {
+  .profile-content .hpanel {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .profile-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .profile-content .panel-body,
+  .profile-content form {
+    height: 100%;
+  }
+
+  .profile-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

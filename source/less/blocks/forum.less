@@ -1,13 +1,11 @@
-.forum-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .forum-inline {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
+
 .forum-search-label {
   flex-basis: 160px;
 }
@@ -27,7 +25,13 @@
 }
 
 .forum-heading {
+  width: 100%;
+  margin-bottom: 15px;
   margin-right: auto;
+}
+
+.forum-heading .forum-inline {
+  justify-content: flex-start;
 }
 
 .forum-box .forum-heading .label {
@@ -41,7 +45,7 @@
 
 .forum-box .forum-heading h4 {
   margin-bottom: 3px;
-  font-weight: 600;
+  font-weight: bold;
   margin-top: 5px;
   display: inline;
 }
@@ -52,20 +56,36 @@
 }
 
 .forum-box .forum-info {
-  text-align: right;
+  text-align: center;
+  flex-basis: 100px;
   line-height: 20px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .forum-box .forum-info .number {
   display: block;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 22px;
   margin-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
-
+  .forum-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .forum-inline {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+  }
+  .forum-box .forum-info {
+    width: initial;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {

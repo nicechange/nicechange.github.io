@@ -1,0 +1,20 @@
+.second-level:hover {
+  .second-level__link svg {
+    transform: rotate(-90deg);
+  }
+  .second-level__list {
+    display: block;
+  }
+}
+
+.second-level__link--opened svg {
+  transform: rotate(-90deg);
+}
+
+.second-level__list {
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+}

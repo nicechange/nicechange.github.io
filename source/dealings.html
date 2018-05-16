@@ -9,116 +9,119 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="js/app.js" as="script">
-    <link rel="preload" href="js/picturefill.js" as="script">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,cyrillic-ext"
-          rel="stylesheet">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanssemibold.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensansextrabold.woff2" as="font">
 </head>
-<body class="inner-page-body">
+<body class="inner-page__body">
 
 <div style="display:none">
     <include src="build/img/sprite.svg"></include>
 </div>
 
-<header class="inner-page-header">
-    <div class="container">
-        <div class="logo--header">
-            <a href="index.html" class="">
-                <img width="60" height="51" src="img/teketoken_logo_header.png" alt="logo TakeToken"/>
-            </a>
+<nav class="navbar navbar--fixed-top navbar--inner">
+    <div class="container container--flex">
+        <a href="index.html" class="logo logo--header">
+            <img width="60" height="51" src="img/teketoken_logo_header.png" alt="logo TakeToken"/>
+        </a>
+        <div class="navbar--right">
+            <ul class="navbar-nav">
+                <li>
+                    <a href="profile.html">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-user-circle"></use>
+                        </svg>
+                        <span>User number one</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" title="Разлогиниться">
+                        <svg class="" width="18" height="18">
+                            <use xlink:href="#sprite-sign-out-alt"></use>
+                        </svg>
+                        <span>Выйти</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <nav>
-            <div class="navbar-right">
-                <ul class="nav navbar-nav no-borders">
-
-                    <li>
-                        <a href="profile.html">
-                            <svg class="" width="24" height="24">
-                                <use xlink:href="#sprite-user-circle"></use>
-                            </svg>
-                            <span class="text-muted">User number one</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="login.html" title="Разлогиниться">
-                            <svg class="" width="24" height="24">
-                                <use xlink:href="#sprite-sign-out-alt"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
     </div>
-</header>
+</nav>
 
 <main class="inner-page">
     <div class="container">
-        <div class="inner-page-navigation" id="navigation">
+        <div class="inner-page__navigation navigation">
 
-            <div class="profile-picture">
-                <a href="index.html">
-                    <img src="img/profile.jpg" class="img-circle m-b" alt="logo">
+            <div class="stats">
+                <a href="index.html" class="stats__img">
+                    <img src="img/profile.jpg" alt="Profile photo">
                 </a>
 
-                <div class="stats-label text-color">
-                    <span class="font-extra-bold font-uppercase">Robert Razer</span>
-                    <small class="text-muted">Пользователь</small>
-                    <div>
-                        <div class="m-t-md m-b-xs">
-                            <svg class="" width="20" height="20">
-                                <use xlink:href="#sprite-star-full"></use>
-                            </svg>
-                            <svg class="" width="20" height="20">
-                                <use xlink:href="#sprite-star-full"></use>
-                            </svg>
-                            <svg class="" width="20" height="20">
-                                <use xlink:href="#sprite-star-full"></use>
-                            </svg>
-                            <svg class="" width="20" height="20">
-                                <use xlink:href="#sprite-star-full"></use>
-                            </svg>
-                            <svg class="" width="20" height="20">
-                                <use xlink:href="#sprite-star"></use>
-                            </svg>
-                        </div>
-                        <small class="text-muted">Рейтинг: 4</small>
+                <div class="stats__wrapper">
+                    <span>Robert Razer</span>
+                    <small>Пользователь</small>
+                    <div class="stats__rating">
+                        <ul>
+                            <li>
+                                <svg width="20" height="20">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="20" height="20">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="20" height="20">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="20" height="20">
+                                    <use xlink:href="#sprite-star-full"></use>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg width="20" height="20">
+                                    <use xlink:href="#sprite-star"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                        <small>Рейтинг: 4</small>
                     </div>
-                    <div>
-                        <h4 class="font-extra-bold m-b-xs">
-                            $260 104,200
-                        </h4>
-                        <small class="text-muted">Прибыль за последний период</small>
+                    <div class="stats__profit">
+                        <p>$260 104,200</p>
+                        <small>Прибыль за последний период</small>
                     </div>
                 </div>
             </div>
 
-            <ul class="nav-buttons">
-                <button class="btn btn-primary button-nav button-open">Отрыть меню</button>
-                <button class="btn btn-primary button-nav button-close">Закрыть меню</button>
-            </ul>
+            <button class="navigation__toggle navigation__toggle--collapsed"></button>
 
-            <ul class="nav" id="side-menu">
+            <ul>
                 <li>
-                    <a href="index.html"> <span class="nav-label">Вернуться на главную</span></a>
+                    <a href="index.html"><span>Вернуться на главную</span></a>
                 </li>
                 <li class="active">
-                    <a href="dealings.html"> <span class="nav-label">Сделки</span></a>
+                    <a href="dealings.html"><span>Сделки</span></a>
                 </li>
                 <li>
                     <a href="purse.html">
                         <svg class="" width="20" height="20">
                             <use xlink:href="#sprite-ruble-sign"></use>
                         </svg>
-                        <span class="nav-label">Кошельки</span></a>
+                        <span>Кошельки</span></a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span class="nav-label">Настройки</span>
+                <li class="second-level">
+                    <a href="#" class="second-level__link">
+                        <span>Настройки</span>
                         <svg class="" width="14" height="14">
                             <use xlink:href="#sprite-chevron-left"></use>
                         </svg>
                     </a>
-                    <ul class="nav nav-second-level">
+                    <ul class="second-level__list">
                         <li><a href="rates.html">Курса валют</a></li>
                         <li><a href="profile.html">Профиля</a></li>
                         <li><a href="alerts.html">Оповещений</a></li>
@@ -127,28 +130,24 @@
             </ul>
         </div>
 
-        <!-- Main Wrapper -->
-        <div class="content-page">
+        <div class="inner-page__content">
 
-            <div id="wrapper">
-                <div class="normalheader transition">
-                    <div class="hpanel">
-                        <div class="panel-body">
-                            <h2 class="font-light m-b-xs">
-                                Сделки
-                            </h2>
-                            <small>Show user data in clear profile design</small>
-                        </div>
+            <div class="inner-page__header">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <h2>
+                            Сделки
+                        </h2>
+                        <small>Show user data in clear profile design</small>
                     </div>
                 </div>
             </div>
+
             <div class="content">
-
                 <div class="hpanel">
-
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item active">
-                            <a class="nav-link">
+                    <ul class="tabs">
+                        <li class="tabs__item tabs__item--active">
+                            <a class="tabs__link">
                                 <svg class="" width="20" height="20">
                                     <use xlink:href="#sprite-btc"></use>
                                 </svg>
@@ -156,8 +155,8 @@
                                 <span class="label label-success">6</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link">
+                        <li class="tabs__item">
+                            <a class="tabs__link">
                                 <svg class="" width="20" height="20">
                                     <use xlink:href="#sprite-ethereum"></use>
                                 </svg>
@@ -169,9 +168,84 @@
 
                     <div class="panel-body tab-content">
 
-                        <div class="tab-pane active">
+                        <div class="tab-pane tab-pane--active">
 
                             <div class="hpanel">
+                                <div class="hpanel">
+                                    <div class="panel-heading">
+                                        <h4 class="text-primary-2">Создать свое предложение</h4>
+                                    </div>
+
+                                    <ul class="tabs">
+                                        <li class="tabs__item tabs__item--active">
+                                            <a class="tabs__link">
+                                                <span>Покупка</span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <a class="tabs__link">
+                                                <span>Продажа</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="panel-body tab-content">
+                                        <div class="tab-pane tab-pane--active">
+                                            <form method="get"
+                                                  class="form-horizontal form-flex">
+                                                <label class="control-label flex-shrink-none"
+                                                       for="buying-btc-sum">
+                                                    Купить BTC на сумму:
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Сумма, Руб."
+                                                       id="buying-btc-sum">
+                                                <label class="control-label flex-shrink-none"
+                                                       for="buying-btc-get">
+                                                    Cредство платежа:
+                                                </label>
+                                                <select class="form-control"
+                                                        name="buying-btc-get"
+                                                        id="buying-btc-get">
+                                                    <option>option 1</option>
+                                                    <option>option 2</option>
+                                                    <option>option 3</option>
+                                                    <option>option 4</option>
+                                                </select>
+                                                <button class="btn btn-primary"
+                                                        type="submit">Найти предложение
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane">
+                                            <form method="get"
+                                                  class="form-horizontal form-flex">
+                                                <label class="control-label flex-shrink-none"
+                                                       for="selling-btc-sum">
+                                                    Продать BTC на сумму:
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Сумма"
+                                                       id="selling-btc-sum">
+                                                <label class="control-label flex-shrink-none"
+                                                       for="selling-btc-get">
+                                                    Инструмент оплаты:
+                                                </label>
+                                                <select class="form-control"
+                                                        name="account" id="selling-btc-get">
+                                                    <option>option 1</option>
+                                                    <option>option 2</option>
+                                                    <option>option 3</option>
+                                                    <option>option 4</option>
+                                                </select>
+                                                <button class="btn btn-primary"
+                                                        type="submit">Найти предложение
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="panel-heading">
                                     <h4 class="text-primary-2">Список заявок</h4>
                                 </div>
@@ -199,8 +273,14 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td nowrap>01.01.2018</td>
+                                        <tr class="footable-row footable-row--opened">
+                                            <td nowrap>
+                                                <svg class="" width="14" height="14">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="#sprite-chevron-right"></use>
+                                                </svg>
+                                                01.01.2018
+                                            </td>
                                             <td nowrap>alberto<span
                                                     class="m-l label label-success">Online</span>
                                             </td>
@@ -216,8 +296,74 @@
                                                 <a class="btn btn-primary">Ответить</a>
                                             </td>
                                         </tr>
+                                        <tr class="footable-row-detail footable-row-detail--opened">
+                                            <td class="footable-row-detail-cell" colspan="5">
+                                                <div class="footable-row-detail-inner">
+                                                    <table
+                                                            class="table table-condensed table-bordered table-striped table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <span>Продать/Купить</span>
+                                                                <a class="sort-indicator">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Количество</span>
+                                                                <a class="sort-indicator sort-up">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Ответы</span>
+                                                                <a class="sort-indicator sort-down">Сортировать</a>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         <tr>
-                                            <td>05.01.2018</td>
+                                            <td>
+                                                <svg class="" width="14" height="14">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="#sprite-chevron-right"></use>
+                                                </svg>
+                                                05.01.2018
+                                            </td>
                                             <td>Big_gold<span
                                                     class="m-l label label-success">Online</span>
                                             </td>
@@ -233,8 +379,74 @@
                                                 <a class="btn btn-primary">Ответить</a>
                                             </td>
                                         </tr>
+                                        <tr class="footable-row-detail">
+                                            <td class="footable-row-detail-cell" colspan="5">
+                                                <div class="footable-row-detail-inner">
+                                                    <table
+                                                            class="table table-condensed table-bordered table-striped table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <span>Продать/Купить</span>
+                                                                <a class="sort-indicator">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Количество</span>
+                                                                <a class="sort-indicator sort-up">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Ответы</span>
+                                                                <a class="sort-indicator sort-down">Сортировать</a>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         <tr>
-                                            <td>20.01.2018</td>
+                                            <td>
+                                                <svg class="" width="14" height="14">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="#sprite-chevron-right"></use>
+                                                </svg>
+                                                20.01.2018
+                                            </td>
                                             <td>Aidar</td>
                                             <td>567,000.00RUB</td>
                                             <td>
@@ -248,8 +460,74 @@
                                                 <a class="btn btn-primary">Ответить</a>
                                             </td>
                                         </tr>
+                                        <tr class="footable-row-detail">
+                                            <td class="footable-row-detail-cell" colspan="5">
+                                                <div class="footable-row-detail-inner">
+                                                    <table
+                                                            class="table table-condensed table-bordered table-striped table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <span>Продать/Купить</span>
+                                                                <a class="sort-indicator">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Количество</span>
+                                                                <a class="sort-indicator sort-up">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Ответы</span>
+                                                                <a class="sort-indicator sort-down">Сортировать</a>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         <tr>
-                                            <td>01.02.2018</td>
+                                            <td>
+                                                <svg class="" width="14" height="14">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="#sprite-chevron-right"></use>
+                                                </svg>
+                                                01.02.2018
+                                            </td>
                                             <td>
                                                 alberto
                                                 <span class="m-l label label-success">Online</span>
@@ -266,8 +544,74 @@
                                                 <a class="btn btn-primary">Ответить</a>
                                             </td>
                                         </tr>
+                                        <tr class="footable-row-detail">
+                                            <td class="footable-row-detail-cell" colspan="5">
+                                                <div class="footable-row-detail-inner">
+                                                    <table
+                                                            class="table table-condensed table-bordered table-striped table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <span>Продать/Купить</span>
+                                                                <a class="sort-indicator">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Количество</span>
+                                                                <a class="sort-indicator sort-up">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Ответы</span>
+                                                                <a class="sort-indicator sort-down">Сортировать</a>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         <tr>
-                                            <td>13.02.2018</td>
+                                            <td>
+                                                <svg class="" width="14" height="14">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="#sprite-chevron-right"></use>
+                                                </svg>
+                                                13.02.2018
+                                            </td>
                                             <td>Big_gold</td>
                                             <td>566,000.00RUB</td>
                                             <td>
@@ -281,8 +625,74 @@
                                                 <a class="btn btn-primary">Ответить</a>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td>28.03.2018</td>
+                                        <tr class="footable-row-detail">
+                                            <td class="footable-row-detail-cell" colspan="5">
+                                                <div class="footable-row-detail-inner">
+                                                    <table
+                                                            class="table table-condensed table-bordered table-striped table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <span>Продать/Купить</span>
+                                                                <a class="sort-indicator">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Количество</span>
+                                                                <a class="sort-indicator sort-up">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Ответы</span>
+                                                                <a class="sort-indicator sort-down">Сортировать</a>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-row">
+                                            <td>
+                                                <svg class="" width="14" height="14">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="#sprite-chevron-right"></use>
+                                                </svg>
+                                                28.03.2018
+                                            </td>
                                             <td>Aidar</td>
                                             <td>567,000.00RUB</td>
                                             <td>
@@ -294,6 +704,66 @@
                                             <td class="text-right">
                                                 <a class="btn btn-default">Удалить</a>
                                                 <a class="btn btn-primary">Ответить</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-row-detail">
+                                            <td class="footable-row-detail-cell" colspan="5">
+                                                <div class="footable-row-detail-inner">
+                                                    <table
+                                                            class="table table-condensed table-bordered table-striped table-hover">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <span>Продать/Купить</span>
+                                                                <a class="sort-indicator">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Количество</span>
+                                                                <a class="sort-indicator sort-up">Сортировать</a>
+                                                            </th>
+                                                            <th>
+                                                                <span>Ответы</span>
+                                                                <a class="sort-indicator sort-down">Сортировать</a>
+                                                            </th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td nowrap>
+                                                                Продажа
+                                                            </td>
+                                                            <td nowrap>
+                                                                0.013
+                                                            </td>
+                                                            <td nowrap>
+                                                                <a class="btn btn-primary">начать сделку</a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -574,86 +1044,86 @@
                                         больше...</a>
                                 </div>
                             </div>
-
-                            <div class="hpanel">
-                                <div class="panel-heading">
-                                    <h4 class="text-primary-2">Создать свое предложение</h4>
-                                </div>
-
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item active">
-                                        <a class="nav-link">
-                                            <span>Покупка</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link">
-                                            <span>Продажа</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <div class="panel-body tab-content">
-                                    <div class="tab-pane active">
-                                        <form method="get"
-                                              class="form-horizontal form-flex">
-                                            <label class="control-label flex-shrink-none m-r"
-                                                   for="buying-btc-sum">
-                                                Купить BTC на сумму:
-                                            </label>
-                                            <input type="text" class="form-control m-r"
-                                                   placeholder="Сумма, Руб."
-                                                   id="buying-btc-sum">
-                                            <label class="control-label flex-shrink-none m-r"
-                                                   for="buying-btc-get">
-                                                Cредство платежа:
-                                            </label>
-                                            <select class="form-control m-r"
-                                                    name="buying-btc-get"
-                                                    id="buying-btc-get">
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                                <option>option 4</option>
-                                            </select>
-                                            <button class="btn btn-primary"
-                                                    type="submit">Найти предложение
-                                            </button>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane">
-                                        <form method="get"
-                                              class="form-horizontal form-flex">
-                                            <label class="control-label flex-shrink-none m-r"
-                                                   for="selling-btc-sum">
-                                                Продать BTC на сумму:
-                                            </label>
-                                            <input type="text" class="form-control m-r"
-                                                   placeholder="Сумма"
-                                                   id="selling-btc-sum">
-                                            <label class="control-label flex-shrink-none m-r"
-                                                   for="selling-btc-get">
-                                                Инструмент оплаты:
-                                            </label>
-                                            <select class="form-control m-r"
-                                                    name="account" id="selling-btc-get">
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                                <option>option 4</option>
-                                            </select>
-                                            <button class="btn btn-primary"
-                                                    type="submit">Найти предложение
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
 
                         <div class="tab-pane">
                             <div class="hpanel">
+
+                                <div class="hpanel">
+                                    <div class="panel-heading">
+                                        <h4 class="text-primary-2">Создать свое предложение</h4>
+                                    </div>
+
+                                    <ul class="tabs">
+                                        <li class="tabs__item tabs__item--active">
+                                            <a class="tabs__link">
+                                                <span>Покупка</span>
+                                            </a>
+                                        </li>
+                                        <li class="tabs__item">
+                                            <a class="tabs__link">
+                                                <span>Продажа</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="panel-body tab-content">
+                                        <div class="tab-pane tab-pane--active">
+                                            <form method="get"
+                                                  class="form-horizontal form-flex">
+                                                <label class="control-label flex-shrink-none"
+                                                       for="buying-eth-sum">
+                                                    Купить ETH на сумму:
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Сумма, Руб."
+                                                       id="buying-eth-sum">
+                                                <label class="control-label flex-shrink-none"
+                                                       for="buying-eth-get">
+                                                    Cредство платежа:
+                                                </label>
+                                                <select class="form-control"
+                                                        name="buying-eth-get"
+                                                        id="buying-eth-get">
+                                                    <option>option 1</option>
+                                                    <option>option 2</option>
+                                                    <option>option 3</option>
+                                                    <option>option 4</option>
+                                                </select>
+                                                <button class="btn btn-primary"
+                                                        type="submit">Найти предложение
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div class="tab-pane">
+                                            <form method="get"
+                                                  class="form-horizontal form-flex">
+                                                <label class="control-label flex-shrink-none"
+                                                       for="selling-eth-sum">
+                                                    Продать ETH на сумму:
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Сумма"
+                                                       id="selling-eth-sum">
+                                                <label class="control-label flex-shrink-none"
+                                                       for="selling-eth-get">
+                                                    Инструмент оплаты:
+                                                </label>
+                                                <select class="form-control"
+                                                        name="account" id="selling-eth-get">
+                                                    <option>option 1</option>
+                                                    <option>option 2</option>
+                                                    <option>option 3</option>
+                                                    <option>option 4</option>
+                                                </select>
+                                                <button class="btn btn-primary"
+                                                        type="submit">Найти предложение
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="panel-heading">
                                     <h4 class="text-primary-2">Список заявок</h4>
                                 </div>
@@ -921,82 +1391,6 @@
                                         больше...</a>
                                 </div>
                             </div>
-
-                            <div class="hpanel">
-                                <div class="panel-heading">
-                                    <h4 class="text-primary-2">Создать свое предложение</h4>
-                                </div>
-
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item active">
-                                        <a class="nav-link">
-                                            <span>Покупка</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link">
-                                            <span>Продажа</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <div class="panel-body tab-content">
-                                    <div class="tab-pane active">
-                                        <form method="get"
-                                              class="form-horizontal form-flex">
-                                            <label class="control-label flex-shrink-none m-r"
-                                                   for="buying-eth-sum">
-                                                Купить ETH на сумму:
-                                            </label>
-                                            <input type="text" class="form-control m-r"
-                                                   placeholder="Сумма, Руб."
-                                                   id="buying-eth-sum">
-                                            <label class="control-label flex-shrink-none m-r"
-                                                   for="buying-eth-get">
-                                                Cредство платежа:
-                                            </label>
-                                            <select class="form-control m-r"
-                                                    name="buying-eth-get"
-                                                    id="buying-eth-get">
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                                <option>option 4</option>
-                                            </select>
-                                            <button class="btn btn-primary"
-                                                    type="submit">Найти предложение
-                                            </button>
-                                        </form>
-                                    </div>
-                                    <div class="tab-pane">
-                                        <form method="get"
-                                              class="form-horizontal form-flex">
-                                            <label class="control-label flex-shrink-none m-r"
-                                                   for="selling-eth-sum">
-                                                Продать ETH на сумму:
-                                            </label>
-                                            <input type="text" class="form-control m-r"
-                                                   placeholder="Сумма"
-                                                   id="selling-eth-sum">
-                                            <label class="control-label flex-shrink-none m-r"
-                                                   for="selling-eth-get">
-                                                Инструмент оплаты:
-                                            </label>
-                                            <select class="form-control m-r"
-                                                    name="account" id="selling-eth-get">
-                                                <option>option 1</option>
-                                                <option>option 2</option>
-                                                <option>option 3</option>
-                                                <option>option 4</option>
-                                            </select>
-                                            <button class="btn btn-primary"
-                                                    type="submit">Найти предложение
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
 
                     </div>
@@ -1012,10 +1406,11 @@
                                 <a class="btn btn-xs btn-primary m-r-xs" href="safe_dealing_buyer.html" target="_blank">Начать
                                     сделку</a>
                                 <button class="chat-tool chat-tool-collapse" title="Свернуть или развернуть чат">
-                                    Свернуть
-                                    или развернуть чат
+                                    Свернуть или развернуть чат
                                 </button>
-                                <button class="chat-tool chat-tool-close" title="Закрыть чат">Закрыть чат</button>
+                                <button class="chat-tool chat-tool-close" title="Закрыть чат">
+                                    Закрыть чат
+                                </button>
                                 <small class="m-t">There are many variations of passages of Lorem Ipsum available, but
                                     the
                                     majority have suffered alteration.
@@ -1111,7 +1506,7 @@
     </div>
 </main>
 
-<footer class="footer">
+<footer class="footer footer--inner-page">
     <div class="container">
         <p>
             Example text
@@ -1124,7 +1519,6 @@
 
 
 <script src="js/app.js"></script>
-<script src="js/picturefill.js"></script>
 
 </body>
 </html>

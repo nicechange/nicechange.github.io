@@ -1,0 +1,59 @@
+.stats {
+  display: none;
+}
+
+.stats__img {
+  display: block;
+  width: 76px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.stats__wrapper {
+  line-height: 1.2;
+
+  small {
+    font-size: 80%;
+    line-height: .6;
+    color: #777;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.stats__rating ul {
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    color: @text-color;
+  }
+}
+
+.stats__profit p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+
+  .stats {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+}

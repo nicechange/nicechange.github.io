@@ -1,6 +1,15 @@
 .logo {
   width: 100px;
 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &--footer {
+    margin: 0 auto;
+  }
+
   &--header {
     height: 55px;
     width: 60px;
@@ -10,24 +19,16 @@
     background-color: #fff;
     text-align: left;
   }
-
-  &--footer {
-    margin-right: auto;
-  }
 }
 
 @media (min-width: @tablet-width) {
-  .logo--header {
 
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .inner-page-header .logo {
-    &--header {
-      width: 200px;
-      padding-left: 33px;
-      padding-right: 10px;
-    }
+  .navbar--inner .logo--header {
+    width: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }

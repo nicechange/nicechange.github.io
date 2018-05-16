@@ -1,0 +1,147 @@
+.navbar {
+  display: block;
+  min-height: 50px;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .05), 0 1px 2px rgba(0, 0, 0, .1);
+
+  &--fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1030;
+  }
+
+  &--right {
+    margin-left: auto;
+  }
+
+  &--inner .navbar-nav {
+    display: flex;
+  }
+
+  &--inner .navbar-nav span {
+    display: none;
+  }
+}
+
+.navbar__header {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar__collapse {
+  display: block;
+  flex-grow: 1;
+}
+
+.navbar__collapse--collapsed {
+  display: none;
+}
+
+.navbar__toggle {
+  display: block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0;
+  background: #fff;
+  border: 1px solid @color-orange;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: @color-orange;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 7px;
+    transform: rotate(45deg);
+    background: @color-orange;
+    box-shadow: none;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background: #fff;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 7px;
+    transform: rotate(-45deg);
+    background: @color-orange;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background: #fff;
+  }
+}
+
+.navbar__toggle--collapsed {
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 7px;
+    background: @color-orange;
+    box-shadow: 0 7px 0 0 @color-orange, 0 -7px 0 0 @color-orange;
+    transform: none;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background: #fff;
+    box-shadow: 0 7px 0 0 #fff, 0 -7px 0 0 #fff;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .navbar__toggle--collapsed {
+    display: none;
+  }
+
+  .navbar__header {
+    border: none;
+    width: auto;
+  }
+
+  .navbar__collapse {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+}

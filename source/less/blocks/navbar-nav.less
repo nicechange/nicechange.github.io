@@ -1,0 +1,96 @@
+.navbar-nav {
+  list-style: none;
+  //display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav > li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+  list-style: none;
+}
+
+.navbar-nav > li > a {
+  position: relative;
+  display: block;
+  height: 56px;
+  padding: 15px 20px;
+  font-size: 25px;
+  line-height: 20px;
+  color: #9d9fa2;
+}
+
+.navbar-nav > li > a > span {
+  display: none;
+}
+
+.navbar-nav {
+  //display: initial;
+}
+
+.navbar-nav > li > a {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 15px;
+  color: #455463;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #fff;
+  background: @color-orange;
+  //opacity: 0.5;
+}
+
+.navbar-nav > li > a:active {
+  color: #fff;
+  background: @color-orange;
+  opacity: 0.5;
+}
+
+.navbar-nav > li > a.active {
+  color: @color-orange;
+}
+
+.navbar-nav > li > a.active:hover,
+.navbar-nav > li > a.active:focus,
+.navbar-nav > li > a.active:active {
+  color: @color-orange;
+  background: #fff;
+  opacity: 1;
+  cursor: default;
+}
+
+.navbar-nav > li > a > span {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 15px;
+}
+
+.navbar-nav > li > a > svg {
+  vertical-align: text-bottom;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+
+    .navbar-nav {
+      display: flex;
+    }
+
+    .navbar-nav > li > a > span {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    .navbar-nav > li > a > span {
+      display: initial;
+    }
+  }
+}

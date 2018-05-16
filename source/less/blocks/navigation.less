@@ -1,0 +1,124 @@
+.navigation {
+  ul {
+    padding: 0 0 0 20px;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  li {
+    color: #f18e3d;
+    position: relative;
+    display: block;
+  }
+
+  li > a {
+    position: relative;
+    display: block;
+    text-transform: none;
+    padding: 10px;
+    color: #909295;
+  }
+
+  li > a:hover,
+  li > a:focus {
+    color: @color-orange;
+  }
+
+  li.active > a {
+    color: @color-orange;
+    font-weight: bold;
+  }
+
+}
+
+.navigation__toggle {
+  display: block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 0;
+  background: #fff;
+  border: 1px solid @color-orange;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: @color-orange;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 7px;
+    transform: rotate(45deg);
+    background: @color-orange;
+    box-shadow: none;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background: #fff;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 7px;
+    transform: rotate(-45deg);
+    background: @color-orange;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background: #fff;
+  }
+}
+
+.navigation__toggle--collapsed {
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 7px;
+    background: @color-orange;
+    box-shadow: 0 7px 0 0 @color-orange, 0 -7px 0 0 @color-orange;
+    transform: none;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background: #fff;
+    box-shadow: 0 7px 0 0 #fff, 0 -7px 0 0 #fff;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .navigation__toggle--collapsed {
+    display: none;
+  }
+}

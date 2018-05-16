@@ -1,31 +1,3 @@
-//.btn {
-//  display: inline-block;
-//  width: 100%;
-//  padding: 14px;
-//  margin-bottom: 10px;
-//  border: 2px solid @border-color;
-//  font-size: 17px;
-//  line-height: 20px;
-//  color: @text-color;
-//  font-weight: bold;
-//  text-align: center;
-//  text-decoration: none;
-//  text-transform: uppercase;
-//
-//  &:hover {
-//    background: #444444;
-//    color: #ffffff;
-//  }
-//
-//  &:active,
-//  &:focus {
-//    background: #444444;
-//    color: #7c7c7c;
-//  }
-//}
-
-
-
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -123,83 +95,30 @@
   margin-top: 5px;
 }
 
-.button-nav {
-  font-size: 0;
-  display: block;
-  width: 35px;
-  height: 35px;
-  position: relative;
-}
+.btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
 
-.button-open:before {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -1px;
-  margin-left: -10px;
-  content: " ";
-  width: 20px;
-  height: 2px;
-  background: @color-orange;
-  box-shadow: 0 7px 0 0 @color-orange, 0 -7px 0 0 @color-orange;
-}
+  button:not(:last-child) {
+    margin-bottom: 15px;
+  }
 
-.button-open:hover:before,
-.button-open:focus:before {
-  background: #fff;
-  box-shadow: 0 7px 0 0 #fff, 0 -7px 0 0 #fff;
-}
-
-.button-open {
-  display: none;
-}
-
-.button-close {
-  //display: none;
-}
-
-.button-close:before {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -1px;
-  margin-left: -10px;
-  content: " ";
-  width: 20px;
-  height: 2px;
-  background: @color-orange;
-  transform: rotate(45deg);
-}
-
-.button-close:after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -1px;
-  margin-left: -10px;
-  content: " ";
-  width: 20px;
-  height: 2px;
-  background: @color-orange;
-  transform: rotate(-45deg);
-}
-
-.button-close:hover:before,
-.button-close:focus:before,
-.button-close:hover:after,
-.button-close:focus:after {
-  background: #fff;
-}
-
-@media (min-width: @tablet-width) {
-  .nav-buttons {
-    display: none;
+  button {
+    margin-right: 7.5px;
+    margin-left: 7.5px;
   }
 }
 
-@media (min-width: @desktop-width) {
+.panel-body.btn-wrapper {
+  button:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 
+@media (min-width: @tablet-width) {
+  .btn-wrapper {
+    flex-direction: row-reverse;
+  }
 }

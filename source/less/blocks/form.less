@@ -149,6 +149,7 @@ label {
 
 .form-flex label {
   margin-bottom: 15px;
+  margin-right: 15px;
 }
 
 .form-flex input {
@@ -171,12 +172,21 @@ label {
   }
 }
 
+.form--rates {
+  margin-top: 35px;
+  .form__list {
+    margin-bottom: 60px;
+  }
+}
+
+.form--alerts {
+  margin-top: 35px;
+}
+
 .form__list {
   margin: 0;
   padding: 0;
   list-style: none;
-
-
 }
 
 .form__item {
@@ -209,6 +219,14 @@ label {
     flex-basis: initial;
   }
 }
+
+.form__help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+
 
 
 @media (min-width: @tablet-width) {
@@ -302,12 +320,14 @@ label {
     width: auto;
     margin-bottom: 0;
     flex-grow: 2;
+    margin-right: 15px;
   }
 
   .form-flex select {
     width: auto;
     margin-bottom: 0;
     flex-grow: 2;
+    margin-right: 15px;
   }
 
   .flex-shrink-none {

@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="js/app.js" as="script">
-    <link rel="preload" href="js/picturefill.js" as="script">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic,cyrillic-ext"
-          rel="stylesheet">
-
-
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensanssemibold.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensansextrabold.woff2" as="font">
 </head>
 <body class="landing-page">
 
@@ -21,20 +21,18 @@
     <include src="build/img/sprite.svg"></include>
 </div>
 
-<nav class="navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-
-            <a href="index.html" class="logo--header">
+<nav class="navbar navbar--fixed-top">
+    <div class="container container--flex">
+        <div class="navbar__header">
+            <a href="index.html" class="logo logo--header">
                 <img width="60" height="51" src="img/teketoken_logo_header.png" alt="logo TakeToken"/>
             </a>
 
-            <button class="navbar-toggle collapsed" type="button">
+            <button class="navbar__toggle navbar__toggle--collapsed" type="button">
                 <span>Открыть меню</span>
             </button>
-
         </div>
-        <div id="navbar" class="navbar-collapse collapsed">
+        <div id="navbar" class="navbar__collapse navbar__collapse--collapsed">
             <ul class="nav navbar-nav">
                 <li><a class="navbar-link" href="faq.html">О сервисе</a></li>
                 <li><a class="navbar-link" href="regulations.html">Правила</a></li>
@@ -629,86 +627,98 @@
 
 </section>
 
-<footer>
-    <section class="footer--landing-page">
-        <div class="container">
-            <div class="logo--footer">
-                <img width="100" height="auto" src="img/teketoken_logo_footer.png" alt="logo TakeToken"/>
-            </div>
-            <ul class="nav nav-list">
-                <li class="nav-header">О проекте</li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Карьера</a></li>
-                <li><a href="#">Комиссия</a></li>
-                <li><a href="#">Вознаграждения за исследование безопасности</a></li>
-                <li><a href="#">Статистика</a></li>
-                <li><a href="#">Условия предоставления услуг</a></li>
-            </ul>
-            <ul class="nav nav-list">
-                <li class="nav-header">СЛУЖБА ПОДДЕРЖКИ</li>
-                <li><a href="#">Обратитесь в нашу службу поддержки</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Руководства</a></li>
-                <li><a href="#">Забыли пароль?</a></li>
-            </ul>
-            <ul class="nav nav-list">
-                <li class="nav-header">УСЛУГИ</li>
-                <li><a href="#">Документация по API</a></li>
-                <li><a href="#">Банкомат LocalBitcoins</a></li>
-                <li><a href="#">Партнеры</a></li>
-                <li><a href="#">Обозреватель блоков</a></li>
-            </ul>
-            <ul class="nav nav-list">
-                <li class="nav-header">МЫ В&nbsp;СОЦСЕТЯХ</li>
-                <li><a href="#">
+<footer class="footer footer--landing-page">
+    <div class="container">
+        <div class="logo logo--footer">
+            <img width="100" height="auto" src="img/teketoken_logo_footer.png" alt="logo TakeToken"/>
+        </div>
+        <ul class="footer__list">
+            <li class="footer__list--header">О проекте</li>
+            <li class="footer__list-item"><a class="footer__link" href="#">О нас</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Карьера</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Комиссия</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Вознаграждения за исследование
+                безопасности</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Статистика</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Условия предоставления услуг</a></li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__list--header">СЛУЖБА ПОДДЕРЖКИ</li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Обратитесь в нашу службу поддержки</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">FAQ</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Руководства</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Забыли пароль?</a></li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__list--header">УСЛУГИ</li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Документация по API</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Банкомат LocalBitcoins</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Партнеры</a></li>
+            <li class="footer__list-item"><a class="footer__link" href="#">Обозреватель блоков</a></li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__list--header">МЫ В&nbsp;СОЦСЕТЯХ</li>
+            <li class="footer__list-item">
+                <a class="footer__link" href="#">
                     <svg class="" width="18" height="18">
                         <use xlink:href="#sprite-facebook"></use>
                     </svg>
                     &nbsp;<span>Facebook</span>
-                </a></li>
-                <li><a href="#">
+                </a>
+            </li>
+            <li class="footer__list-item">
+                <a class="footer__link" href="#">
                     <svg class="" width="18" height="18">
                         <use xlink:href="#sprite-twitter"></use>
                     </svg>
                     &nbsp;<span>Twitter</span>
-                </a></li>
-                <li><a href="#">
+                </a>
+            </li>
+            <li class="footer__list-item">
+                <a class="footer__link" href="#">
                     <svg class="" width="18" height="18">
                         <use xlink:href="#sprite-instagram"></use>
                     </svg>
                     &nbsp;<span>Instagram</span>
-                </a></li>
-                <li><a href="#">
+                </a>
+            </li>
+            <li class="footer__list-item">
+                <a class="footer__link" href="#">
                     <svg class="" width="18" height="18">
                         <use xlink:href="#sprite-reddit-alien"></use>
                     </svg>
                     &nbsp;<span>Reddit</span>
-                </a></li>
-                <li><a href="#">
+                </a>
+            </li>
+            <li class="footer__list-item">
+                <a class="footer__link" href="#">
                     <svg class="" width="18" height="18">
                         <use xlink:href="#sprite-hashtag"></use>
                     </svg>
                     &nbsp;<span>IRC</span>
-                </a></li>
-                <li><a href="#">
+                </a>
+            </li>
+            <li class="footer__list-item">
+                <a class="footer__link" href="#">
                     <svg class="" width="18" height="18">
                         <use xlink:href="#sprite-rss"></use>
                     </svg>
                     &nbsp;<span>Блог</span>
-                </a></li>
-                <li><a href="#">
+                </a>
+            </li>
+            <li class="footer__list-item">
+                <a class="footer__link" href="#">
                     <svg class="" width="18" height="18">
                         <use xlink:href="#sprite-weibo"></use>
                     </svg>
                     &nbsp;<span>Китайский блог</span>
-                </a></li>
-            </ul>
-        </div>
-    </section>
+                </a>
+            </li>
+        </ul>
+    </div>
 </footer>
 
 <script src="js/app.js"></script>
-<script src="js/picturefill.js"></script>
 
 </body>
 </html>
