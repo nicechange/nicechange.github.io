@@ -1676,7 +1676,6 @@ label {
             flex-grow: 1;
   }
   .form-flex input {
-    width: auto;
     margin-bottom: 0;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
@@ -1954,7 +1953,8 @@ label {
     width: 190px;
     top: 60px;
     bottom: 50px;
-    overflow: scroll;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
   .inner-page__content {
     margin: 0;
